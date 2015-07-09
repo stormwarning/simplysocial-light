@@ -1,0 +1,15 @@
+/**
+ * Site logo/logotype.
+ */
+.logo {
+
+  h1 {
+    margin-bottom: 0;
+    color: $brand-dark;
+    text-transform: lowercase;
+
+    span {
+      color: $brand-light;
+    }
+  }
+}

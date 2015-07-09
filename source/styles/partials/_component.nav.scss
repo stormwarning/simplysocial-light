@@ -1,0 +1,29 @@
+/**
+ * Nav component.
+ *
+ * Aligns unordered list items horizontally and increases hit area of links.
+ */
+.nav {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    margin: 0;
+    font-size: $base-font-size;
+    text-indent: 0;
+
+    // overwrite custom `<ul>` bullet styles.
+    &:before {
+      content: none;
+    }
+
+    > a {
+      display: inline-block;
+      padding: ($layout-gutter / 4) ($layout-gutter / 2);
+      line-height: $base-line-height;
+    }
+  }
+}

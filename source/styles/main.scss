@@ -19,18 +19,18 @@
 /**
  * Objects, abstractions, and constructs
  */
+@import "partials/object.logo";
 // @import "partials/component.layout";
 // @import "partials/component.icon";
-// @import "partials/component.logo";
-// @import "partials/component.nav";
-// @import "partials/component.hero";
+@import "partials/component.nav";
+@import "partials/component.hero";
 
 
 /**
  * Layout styles for various sections
  */
-// @import "partials/layout.menu";
-// @import "partials/layout.footer";
+@import "partials/section.header";
+@import "partials/section.footer";
 // @import "partials/layout.work";
 // @import "partials/layout.project";
 // @import "partials/layout.resume";
