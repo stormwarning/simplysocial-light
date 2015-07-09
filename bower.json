@@ -1,0 +1,26 @@
+{
+  "name": "simplysocial-light",
+  "version": "0.0.0",
+  "private": true,
+  "authors": [
+    "Jeff <rustyangel@gmail.com>"
+  ],
+  "description": "SimplySocial",
+  "keywords": [
+    "invision"
+  ],
+  "license": "MIT",
+  "homepage": "http://stormwarning.github.io/simplysocial-light/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "normalize-scss": "~3.0.3"
+  }
+}
