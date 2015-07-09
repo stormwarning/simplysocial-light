@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+/**
+ * Colours
+ */
+$black:             #222;
+$grey-black:        #262728;
+$grey-dark:         #343d41;
+$grey:              #697074;
+$grey-light:        #b5bdc1;
+$white:             #fff;
+
+$green-black:       #007f60;
+$green-dark:        #00b286;
+$green:             #00b286;
+$green-light:       #4cffd2;
+
+$backdrop-light:    #e3e4e8;
+$backdrop-dark:     #dadbe0;
+
+$color-text:        $white;
+$color-background:  $black;
+$color-link:        $green;
+$color-shadow:      $grey-dark;
+$color-selection:   $grey-dark;
+
+$color-email:       #00b489;
+$color-twitter:     #55aace;
+$color-github:      #171515;
+$color-behance:     #1769ff;
+$color-linkedin:    #0077b5;
+
+
+
+/**
+ * Typography
+ */
+// Font stacks
+$font-body:         "Proxima Nova", sans-serif;
+$font-heading:      $font-body;
+
+// Typographic scale
+$base-font-size:    14px !default;
+$base-line-height:  24px !default;
+
+$giga-size:         96px !default;
+$mega-size:         72px !default;
+$kilo-size:         48px !default;
+
+$h1-size:           36px !default; // .alpha
+$h2-size:           30px !default; // .beta
+$h3-size:           24px !default; // .gamma
+$h4-size:           20px !default; // .delta
+$h5-size:           16px !default; // .epsilon
+$h6-size:           15px !default; // .zeta
+
+$milli-size:        12px !default;
+$micro-size:        10px !default;
+
+
+/**
+ * Basic custom style variables.
+ */
+$site-width:        1024px;
+$base-radius:       5px;
+$sprite-size:       600px 400px;
+
+// Transition settings
+$timing:            ease-in-out;
+
+// Grid settings
+$layout-gutter:     20px;
+
+// Breakpoints
+$breakpoints: (
+  "medium"          "screen and (min-width: 32em)",
+  "large"           "screen and (min-width: 62em)",
+  "retina"          "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)"
+  "portrait"        "all and (orientation: portrait)",
+  "landscape"       "all and (orientation: landscape)"
+) !default;

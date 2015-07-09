@@ -1,0 +1,253 @@
+/*------------------------------------*\
+    #GLOBAL
+\*------------------------------------*/
+/**
+ * High-, page-level styling.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ * 4. Prevent certain mobile browsers from automatically zooming fonts.
+ * 5. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ * 6. Set the global `box-sizing` state to `border-box`.
+ */
+html {
+  min-height: 100%; /* [3] */
+  overflow-y: scroll; /* [2] */
+  font-size: ($base-font-size / 16px) * 1em; /* [1] */
+  -moz-osx-font-smoothing: grayscale; /* [5] */
+  -webkit-font-smoothing: antialiased; /* [5] */
+  line-height: $base-line-height / $base-font-size; /* [1] */
+  color: $color-text;
+  -webkit-text-size-adjust: 100%; /* [4] */
+  -ms-text-size-adjust: 100%; /* [4] */
+  background-color: $color-background;
+  box-sizing: border-box; /* [6] */
+}
+
+
+/**
+ * A better `box-sizing` best-practice.
+ *
+ * @link https://css-tricks.com/?p=175473
+ * @link http://paulirish.com/2012/box-sizing-border-box-ftw
+ */
+* {
+
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+
+
+
+/**
+ * Sticky footers through flexbox.
+ *
+ * 1. Vertical flex-direction requires a height value to be set.
+ *
+ * @link http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+ */
+body {
+  display: flex;
+  min-height: 100vh; /* [1] */
+  flex-direction: column;
+
+  .main {
+    flex: 1;
+  }
+}
+
+
+
+
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ * 4. If images must be resized in HTML, let's make sure they look good.
+ */
+img {
+  height: auto;
+  max-width: 100%; /* [1] */
+  font-style: italic; /* [2] */
+  vertical-align: middle; /* [3] */
+  -ms-interpolation-mode: bicubic; /* [4] */
+
+  &.alignright {
+    float: right;
+    margin-bottom: $base-line-height;
+    margin-left: $layout-gutter;
+  }
+
+  &.alignleft {
+    float: left;
+    margin-right: $layout-gutter;
+    margin-bottom: $base-line-height;
+  }
+}
+
+p > img {
+  margin: 0 auto;
+}
+
+/* Stop `max-width` from breaking Google Maps images. */
+.google-map img { max-width: none; }
+
+
+figure {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: $base-line-height;
+  line-height: 0;
+
+  &.alignright {
+    float: right;
+    margin-bottom: $base-line-height;
+    margin-left: $layout-gutter;
+  }
+
+  &.alignleft {
+    float: left;
+    margin-right: $layout-gutter;
+    margin-bottom: $base-line-height;
+  }
+
+  > figcaption {
+    font-family: $font-heading;
+    line-height: 2.2;
+    border-bottom: 1px dotted rgba($grey-dark, 0.4);
+
+    > :last-child { margin-bottom: 0; }
+  }
+}
+
+
+
+
+/**
+ * Grid layout system.
+ *
+ * 1. Remove left-most gutter spacing.
+ * 2. Remove whitespace from inline-block elements.
+ *
+ * @link http://csswizardry.com/csswizardry-grids/
+ */
+%layout {
+  padding: 0;
+  margin: 0;
+  margin-left: -$layout-gutter; /* [1] */
+  font-size: 0; /* [2] */
+  list-style: none;
+}
+
+
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Full-width unless told to behave otherwise.
+ * 3. Space columns apart.
+ * 4. Make sure grid blocks don't inherit font-size from container.
+ * 5. Align columns to the tops of each other.
+ */
+%layout-item {
+  display: inline-block; /* [1] */
+  width: 100%; /* [2] */
+  padding-left: $layout-gutter; /* [3] */
+  font-size: $base-font-size; /* [4] */
+  vertical-align: top; /* [5] */
+}
+
+
+
+
+/**
+ * Micro clearfix.
+ *
+ * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
+ * and over in your markup.
+ *
+ * @link http://css-101.org/articles/clearfix/latest-new-clearfix-so-far.php
+ */
+%cf {
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+
+
+
+/**
+ * Vertical centering methods.
+ *
+ * `translateY` method is clean, but can result in half-pixel blurriness.
+ * Pseudo-element method is more verbose, but won't return half pixels.
+ */
+%vertical-center {
+  position: relative;
+  top: 50%;
+  margin-bottom: 0;
+  transform: translateY(-50%);
+  backface-visibility: hidden;
+}
+
+
+%center-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  &:before {
+    display: inline-block;
+    height: 100%;
+    font-size: 0;
+    vertical-align: middle;
+    content: "";
+  }
+
+  > * {
+    display: inline-block;
+    max-width: 90%;
+    font-size: $base-font-size;
+    vertical-align: middle;
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+/**
+ * Text meant only for screen readers.
+ *
+ * @link http://h5bp.com/v
+ */
+%visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}

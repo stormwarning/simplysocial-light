@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #STYLE MANIFEST
+\*------------------------------------*/
+/**
+ * Generic utility styles etc.
+ */
+@import "variables";
+@import "mixins";
+@import "../vendor/normalize-scss/normalize";
+
+
+/**
+ * Base styles; unclassed HTML elements etc.
+ */
+@import "partials/base.global";
+@import "partials/base.typography";
+
+
+/**
+ * Objects, abstractions, and constructs
+ */
+// @import "partials/component.layout";
+// @import "partials/component.icon";
+// @import "partials/component.logo";
+// @import "partials/component.nav";
+// @import "partials/component.hero";
+
+
+/**
+ * Layout styles for various sections
+ */
+// @import "partials/layout.menu";
+// @import "partials/layout.footer";
+// @import "partials/layout.work";
+// @import "partials/layout.project";
+// @import "partials/layout.resume";
+
+
+/**
+ * Page-specific styles
+ */
+// @import "partials/layout.front";
+// @import "partials/layout.page";
+// @import "partials/layout.404";
+
+
+/**
+ * Style trumps; helper and vendor styles
+ */
+// @import "partials/trump.modernizr";
+// @import "partials/trump.print";
+// @import "partials/trump.debug";
