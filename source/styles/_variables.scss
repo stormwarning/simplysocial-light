@@ -16,11 +16,13 @@ $green-dark:        #00b286;
 $green:             #00b286;
 $green-light:       #4cffd2;
 
-$backdrop-light:    #e3e4e8;
-$backdrop-dark:     #dadbe0;
+$brand-dark:        #70767f;
+$brand-light:       #bec3cc;
+$ui-dark:           #dee1e5;
+$ui-light:          #f4f5f7;
 
-$color-text:        $white;
-$color-background:  $black;
+$color-text:        $grey-black;
+$color-background:  $white;
 $color-link:        $green;
 $color-shadow:      $grey-dark;
 $color-selection:   $grey-dark;
@@ -37,6 +39,7 @@ $color-linkedin:    #0077b5;
  * Typography
  */
 // Font stacks
+
 $font-body:         "Proxima Nova", sans-serif;
 $font-heading:      $font-body;
 
