@@ -33,6 +33,47 @@
   display: flex;
 
   > div {
+    min-width: 575px;
     margin: auto;
+  }
+}
+
+
+
+
+.post-filters {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  height: 56px;
+  max-width: 575px;
+
+  .nav {
+    display: inline-block;
+
+    &:last-child {
+      float: right;
+    }
+
+    li {
+      margin-right: $layout-gutter;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      padding-top: 0;
+      padding-bottom: 0;
+      font-weight: 800;
+      line-height: 56px;
+      color: $white;
+      text-transform: uppercase;
+
+      &.is-active {
+        border-bottom: 4px solid $green;
+      }
+    }
   }
 }
