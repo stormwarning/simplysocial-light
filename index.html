@@ -23,12 +23,12 @@
     <div class="layout-container">
 
       <a class="logo" href="/">
-        <img src alt="" width="27" height="25">
+        <img src="#" alt="" width="27" height="25">
         <h1>Simply<span>Social</span></h1>
       </a>
 
       <div class="header-controls">
-        <button type="button"></button>
+        <button class="button  button--link  js-open-message-modal" type="button"><img src="#" alt="" width="31" height="26"></button>
 
         <form class="site-search">
           <label>
@@ -38,7 +38,7 @@
 
         <nav class="profile-nav" role="navigation">
           <a class="profile-link" href="/profile/">
-            <img src alt="" width="30" height="30">
+            <img src="#" alt="" width="30" height="30">
           </a>
 
           <div class="dropdown">
@@ -72,12 +72,12 @@
         <div>
 
           <form class="message-entry">
-            <label>
-              <input type="text" placeholder="What's on your mind?">
+            <label class="entry-field">
+              <input type="text" placeholder="What’s on your mind?">
             </label>
 
-            <button type="button">Add Photo</button>
-            <button type="button">Add Video</button>
+            <button class="button  button--link" type="button"><img src="#" width="18" height="13"> Add Photo</button>
+            <button class="button  button--link" type="button"><img src="#" width="18" height="13"> Add Video</button>
           </form>
 
           <nav class="post-filters" role="navigation">
@@ -109,52 +109,52 @@
 
     <section class="posts">
 
-      <figure class="post">
-        <div class="post-body">
-          <img class="author-avatar" src="#" alt="">
+      <article class="card">
+        <div class="card-body">
+          <img class="author-avatar" src="#" alt="" width="40" height="40">
 
-          <div class="post-text">
+          <div class="card-text">
             <h5 class="author-name">Sam Soffes</h5>
             <p>How to Get Inspired: the Right Way - Designmodo <a href="http://bit.ly/1lE4uJc" rel="nofollow" target="_blank">bit.ly/1lE4uJc</a> Good stuff from <a class="user-link" href="#"><span>@</span>designmodo</a>!</p>
           </div>
         </div>
 
-        <!-- <div class="post-media"></div> -->
+        <!-- <figure class="card-media"></figure> -->
 
-        <div class="post-footer">
-          <nav class="post-actions">
-            <ul class="nav  nav--post-actions">
-              <li>
-                <button type="button">Reply</button>
-              </li>
-              <li>
-                <button type="button">Like</button>
-              </li>
-              <li>
-                <a class="u-url" href="#">
-                  <time class="dt-updated" pubdate datetime="[utc]">3m</time>
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button type="button">Reply</button>
+            </li>
+            <li>
+              <button type="button">Like</button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">3m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
+        <div class="card-footer">
           <a class="js-show-replies" href="#replies-to-0001">Expand</a>
 
-          <div class="post-replies" id="replies-to-0001">
+          <div class="card-replies" id="replies-to-0001">
 
-            <div class="post-reply">
-              <div class="post-body">
-                <img class="author-avatar" src="#" alt="">
+            <div class="card-reply">
+              <div class="card-body">
+                <img class="author-avatar" src="#" alt="" width="40" height="40">
 
-                <div class="post-text">
+                <div class="card-text">
                   <h5 class="author-name">Jed Bridges</h5>
                   <p>Great way to start the week. Thanks for sharing!</p>
                 </div>
               </div>
 
-              <div class="post-footer">
-                <nav class="post-actions">
-                  <ul class="nav  nav--post-actions">
+              <div class="card-footer">
+                <nav class="card-actions">
+                  <ul class="nav  nav--actions">
                     <li>
                       <button type="button">Reply</button>
                     </li>
@@ -171,19 +171,19 @@
               </div>
             </div>
 
-            <div class="post-reply">
-              <div class="post-body">
-                <img class="author-avatar" src="#" alt="">
+            <div class="card-reply">
+              <div class="card-body">
+                <img class="author-avatar" src="#" alt="" width="40" height="40">
 
-                <div class="post-text">
+                <div class="card-text">
                   <h5 class="author-name">Ren Walker</h5>
                   <p>Feeling inspired now... thanks for great article <a class="user-link" href="#"><span>@</span>designmodo</a></p>
                 </div>
               </div>
 
-              <div class="post-footer">
-                <nav class="post-actions">
-                  <ul class="nav  nav--post-actions">
+              <div class="card-footer">
+                <nav class="card-actions">
+                  <ul class="nav  nav--actions">
                     <li>
                       <button type="button">Reply</button>
                     </li>
@@ -208,7 +208,7 @@
 
           </div>
         </div>
-      </figure>
+      </article>
 
     </section>
 
