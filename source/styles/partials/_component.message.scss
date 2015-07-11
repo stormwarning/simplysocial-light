@@ -1,0 +1,35 @@
+/**
+ * Message compose form.
+ */
+.message-entry {
+  position: relative;
+  padding: $layout-gutter;
+  background-color: $green;
+  opacity: 0.7;
+
+  .button {
+    color: $white;
+    opacity: 0.5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+
+
+.entry-field {
+  display: block;
+  margin-bottom: $base-line-height;
+
+  input {
+    display: block;
+    font-size: $h2-size;
+    font-weight: 200;
+    color: $white;
+    background-color: transparent;
+    border: 0;
+  }
+}
