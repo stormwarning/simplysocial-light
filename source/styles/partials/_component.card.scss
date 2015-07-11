@@ -6,6 +6,7 @@
 .card {
   position: relative;
   display: inline-block;
+  text-align: left;
   border: 1px solid $ui-dark;
   border-radius: $base-radius;
 }

@@ -5,4 +5,15 @@
  */
 .posts {
   padding: 50px $layout-gutter;
+  text-align: center;
+}
+
+
+
+
+.posts--list-view {
+
+  .card {
+    max-width: 575px;
+  }
 }
