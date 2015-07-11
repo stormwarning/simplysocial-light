@@ -1,0 +1,88 @@
+/**
+ * Card content blocks.
+ *
+ * Mixed media content elements arranged in a grid.
+ */
+.card {
+  position: relative;
+  display: inline-block;
+  border: 1px solid $ui-dark;
+  border-radius: $base-radius;
+}
+
+
+
+
+.card-body {
+  @extend %cf;
+
+  padding: 25px 50px 25px 25px;
+}
+
+
+.author-avatar {
+  float: left;
+  margin-right: $layout-gutter;
+}
+
+
+.card-text {
+  overflow: hidden;
+
+  &,
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.author-name {
+  margin-bottom: ($base-line-height / 4);
+}
+
+
+
+
+.card-media {
+
+}
+
+
+
+
+.card-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+
+.card-footer {
+
+}
+
+
+.reply-form {
+  padding: 25px;
+  background-color: $ui-light;
+
+  input {
+    width: 100%;
+  }
+}
+
+
+
+
+.card-replies {
+  border-top: 1px solid $ui-dark;
+}
+
+
+.card-reply {
+  position: relative;
+  background-color: $ui-light;
+  border-bottom: 1px solid $ui-dark;
+}
