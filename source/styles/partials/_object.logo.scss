@@ -3,8 +3,15 @@
  */
 .logo {
 
+  img,
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   h1 {
     margin-bottom: 0;
+    font-size: $h4-size;
     color: $brand-dark;
     text-transform: lowercase;
 
