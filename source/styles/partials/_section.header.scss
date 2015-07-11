@@ -4,6 +4,8 @@
  * Contains logo and user controls. Fixed to top of window.
  */
 .site-header {
+  @extend %cf;
+
   position: fixed;
   top: 0;
   z-index: 900;
@@ -12,7 +14,37 @@
   color: $grey-light;
   background-color: $grey-black;
 
+  .logo,
+  .header-controls {
+    line-height: 60px;
+  }
+
   + .main {
     margin-top: 60px;
   }
+}
+
+
+
+
+.header-controls {
+  display: inline-block;
+  float: right;
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+
+
+.profile-nav {
+
+}
+
+
+.dropdown {
+  display: none;
 }
