@@ -1,0 +1,48 @@
+/**
+ * Buttons and button-style links.
+ */
+.button {
+  display: inline-block;
+  padding-top: 0;
+  padding-right: 1rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  margin: 0;
+  font-family: $font-body;
+  font-size: $base-font-size;
+  color: $color-link;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid;
+  transition: all 0.25s $timing;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $color-link;
+    border-color: $color-link;
+  }
+}
+
+
+
+
+.button--link {
+  background-color: transparent;
+  border: 0;
+}
