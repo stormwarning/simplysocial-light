@@ -1,0 +1,39 @@
+/**
+ * Default form element styles.
+ */
+form {
+
+}
+
+
+fieldset {
+  border: 0;
+}
+
+
+legend {
+  border: 0;
+}
+
+
+input {
+  padding: 0.8rem 1rem;
+  font-family: $font-body;
+  font-size: $h6-size;
+  font-weight: 500;
+  // line-height: 1.5;
+  vertical-align: top;
+  background-color: $white;
+  border: 1px solid $ui-dark;
+  border-radius: $base-radius;
+  box-shadow: none;
+  transition: box-shadow 0.25s $timing;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 8px 0 0 -4px $color-link;
+  }
+}
