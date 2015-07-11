@@ -1,0 +1,17 @@
+/**
+ * Header search form.
+ */
+.site-search {
+
+  label {
+    display: inline-block;
+  }
+
+  input {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 30px;
+    background-color: transparent;
+    border-color: $brand-dark;
+  }
+}
