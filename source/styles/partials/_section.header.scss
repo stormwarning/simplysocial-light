@@ -30,14 +30,11 @@
 .header-controls {
   display: inline-block;
   float: right;
+  font-size: 0;
 
   > * {
     display: inline-block;
     vertical-align: middle;
-  }
-
-  .icon {
-    top: 0;
   }
 }
 
@@ -45,7 +42,26 @@
 
 
 .profile-nav {
+  position: relative;
+  margin-right: ($layout-gutter * 4);
+  margin-left: $layout-gutter;
+}
 
+
+.profile-link {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    position: absolute;
+    top: 28px;
+    right: -18px;
+    display: inline-block;
+    border: 4px solid transparent;
+    border-collapse: separate;
+    border-top-color: #4b4f54;
+    content: "";
+  }
 }
 
 
