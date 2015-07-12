@@ -4,6 +4,7 @@
 .site-search {
 
   label {
+    position: relative;
     display: inline-block;
   }
 
@@ -14,5 +15,13 @@
     vertical-align: middle;
     background-color: transparent;
     border-color: $brand-dark;
+  }
+
+  button {
+    position: absolute;
+  }
+
+  .icon {
+    fill: $brand-light;
   }
 }
