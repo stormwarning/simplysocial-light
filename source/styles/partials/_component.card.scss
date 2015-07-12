@@ -32,12 +32,11 @@
   @extend %cf;
 
   padding: 25px 50px 25px 25px;
-}
 
-
-.author-avatar {
-  float: left;
-  margin-right: $layout-gutter;
+  > img {
+    float: left;
+    margin-right: $layout-gutter;
+  }
 }
 
 
@@ -52,8 +51,10 @@
 }
 
 
-.author-name {
+.card-title {
   margin-bottom: ($base-line-height / 4);
+  color: $grey-dark;
+  text-transform: none;
 }
 
 

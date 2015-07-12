@@ -83,53 +83,13 @@ img {
   font-style: italic; /* [2] */
   vertical-align: middle; /* [3] */
   -ms-interpolation-mode: bicubic; /* [4] */
-
-  &.alignright {
-    float: right;
-    margin-bottom: $base-line-height;
-    margin-left: $layout-gutter;
-  }
-
-  &.alignleft {
-    float: left;
-    margin-right: $layout-gutter;
-    margin-bottom: $base-line-height;
-  }
-}
-
-p > img {
-  margin: 0 auto;
 }
 
 /* Stop `max-width` from breaking Google Maps images. */
 .google-map img { max-width: none; }
 
-
-figure {
-  display: inline-block;
-  margin: 0;
-  margin-bottom: $base-line-height;
-  line-height: 0;
-
-  &.alignright {
-    float: right;
-    margin-bottom: $base-line-height;
-    margin-left: $layout-gutter;
-  }
-
-  &.alignleft {
-    float: left;
-    margin-right: $layout-gutter;
-    margin-bottom: $base-line-height;
-  }
-
-  > figcaption {
-    font-family: $font-heading;
-    line-height: 2.2;
-    border-bottom: 1px dotted rgba($grey-dark, 0.4);
-
-    > :last-child { margin-bottom: 0; }
-  }
+.img--avatar {
+  border-radius: $base-radius;
 }
 
 
