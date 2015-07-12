@@ -66,5 +66,41 @@
 
 
 .dropdown {
-  display: none;
+  position: absolute;
+  top: 55px;
+  right: -42px; // Line-up dropdown arrow with menu arrow.
+  min-width: 100px;
+  background-color: $ui-light;
+  border-radius: $base-radius;
+
+  li {
+    padding-top: 1px;
+    border-bottom: 1px solid $ui-dark;
+
+    &:first-child {
+
+      a {
+
+        &::after {
+          position: absolute;
+          top: -16px;
+          right: $layout-gutter;
+          display: inline-block;
+          border: 8px solid transparent;
+          border-collapse: separate;
+          border-bottom-color: $ui-light;
+          content: "";
+        }
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  a {
+    font-size: $milli-size;
+    color: $brand-dark;
+  }
 }
