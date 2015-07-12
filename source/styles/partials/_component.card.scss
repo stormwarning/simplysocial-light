@@ -9,6 +9,20 @@
   text-align: left;
   border: 1px solid $ui-dark;
   border-radius: $base-radius;
+
+  a {
+    color: $brand-light;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-link;
+    }
+
+    span {
+      opacity: 0.75;
+    }
+  }
 }
 
 
@@ -29,6 +43,7 @@
 
 .card-text {
   overflow: hidden;
+  color: $brand-dark;
 
   &,
   > :last-child {
@@ -55,6 +70,17 @@
   position: absolute;
   top: 0;
   right: 0;
+
+  .button {
+    color: $brand-light;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-link;
+      background-color: transparent;
+    }
+  }
 }
 
 
@@ -62,6 +88,13 @@
 
 .card-footer {
 
+}
+
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: $base-line-height;
+  margin-left: 85px;
 }
 
 
