@@ -1,0 +1,49 @@
+/**
+ * Icons.
+ *
+ * Text-inline icon images.
+ */
+.icon {
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+
+
+
+.icon--logo {
+  width: 27px;
+  height: 25px;
+  fill: $green;
+}
+
+
+.icon--compose {
+  width: 31px;
+  height: 26px;
+  // fill: $green;
+}
+
+
+.icon--search {
+
+}
+
+
+.icon--photo,
+.icon--video {
+  width: 18px;
+  height: 13px;
+}
+
+
+.icon--reply,
+.icon--heart {
+  width: 13px;
+  height: 13px;
+}
