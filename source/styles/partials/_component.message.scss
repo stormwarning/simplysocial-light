@@ -8,7 +8,9 @@
   opacity: 0.7;
 
   .button {
+    font-size: $h6-size;
     color: $white;
+    text-transform: capitalize;
     opacity: 0.5;
 
     &:hover,
