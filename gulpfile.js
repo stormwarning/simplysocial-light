@@ -55,7 +55,7 @@ gulp.task( 'styles', function() {
       browsers: AUTOPREFIXER_BROWSERS
     }) )
     .pipe( $.csso() )
-    .pipe( gulp.dest( assets.styles ) )
+    .pipe( gulp.dest( assets.styles ) );
 
 });
 
@@ -89,14 +89,16 @@ gulp.task( 'images', function() {
 gulp.task( 'sprite', function() {
 
   return gulp.src( source.svgs )
+  .pipe( $.plumber() )
   .pipe( $.svgSprite({
+    log: 'verbose',
     mode: {
       symbol: {
         dest: './',
         sprite: 'sprite.symbol.svg'
       }
     }
-  }) )
+  }) ).on('error', function(error){ console.log(error); })
   .pipe( gulp.dest( assets.images ) );
 
 });
