@@ -7,17 +7,29 @@ form {
 
 
 fieldset {
+  padding: 50px 0;
+  margin-bottom: 50px;
   border: 0;
+  border-bottom: 1px solid $ui-light;
 }
 
 
 legend {
+  @include typ-font-size(13px);
+
+  font-weight: 600;
+  color: $brand-dark;
+  text-transform: uppercase;
   border: 0;
 }
 
 
-.input-field,
-input {
+label {
+  cursor: pointer;
+}
+
+
+.input-field {
   padding: 0.8rem 1rem;
   font-family: $font-body;
   font-size: $h6-size;
@@ -35,5 +47,106 @@ input {
   &:focus {
     outline: none;
     box-shadow: inset 8px 0 0 -4px $color-link;
+  }
+}
+
+
+/**
+ * Custom checkbox/radio controls.
+ *
+ * Hide default UI and use pseudo-elements for custom display.
+ */
+.control {
+  position: relative;
+
+  > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:checked ~ .control-label {
+
+      &::before {
+        background-color: $green-dark;
+      }
+
+      &::after {
+        transform: translateX(25px);
+      }
+    }
+  }
+}
+
+
+.control-label {
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: "";
+    transition: transform 150ms $timing;
+  }
+
+  &::before {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-right: $layout-gutter;
+    vertical-align: middle;
+    background-color: $ui-dark;
+    border-radius: 25px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 23px;
+    height: 23px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+}
+
+
+
+
+.control--radio {
+
+  > input {
+
+    &:checked ~ .control-label {
+
+      &::before {
+        background-color: transparent;
+      }
+
+      &::after {
+        background-color: $green-dark;
+        transform: none;
+      }
+    }
+  }
+
+  .control-label {
+
+    &::before {
+      width: 23px;
+      height: 23px;
+      background-color: transparent;
+      border: 1px solid $ui-dark;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: transparent;
+    }
   }
 }

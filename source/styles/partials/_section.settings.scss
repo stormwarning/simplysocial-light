@@ -1,0 +1,20 @@
+/**
+ * Profile settings section.
+ *
+ * Display profile setings form options.
+ */
+.profile-settings {
+  padding: 50px $layout-gutter;
+
+  fieldset {
+
+    .control {
+      display: block;
+      margin-bottom: $layout-gutter;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

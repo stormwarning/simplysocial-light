@@ -23,22 +23,33 @@
     <div class="layout-container">
 
       <a class="logo" href="/">
-        <img src="#" alt="" width="27" height="25">
+        <svg class="icon  icon--logo">
+          <use xlink:href="/assets/images/sprite.symbol.svg#icon-logo"></use>
+        </svg>
         <h1>Simply<span>Social</span></h1>
       </a>
 
       <div class="header-controls">
-        <button class="button  button--link  js-open-message-modal" type="button"><img src="#" alt="" width="31" height="26"></button>
+        <button class="button  button--link  js-open-message-modal" type="button">
+          <svg class="icon  icon--compose">
+            <use xlink:href="/assets/images/sprite.symbol.svg#icon-compose"></use>
+          </svg>
+        </button>
 
         <form class="site-search">
           <label>
-            <input type="search">
+            <input class="input-field" type="search">
+            <button class="button  button--link" type="submit">
+              <svg class="icon  icon--search">
+                <use xlink:href="/assets/images/sprite.symbol.svg#icon-search"></use>
+              </svg>
+            </button>
           </label>
         </form>
 
         <nav class="profile-nav" role="navigation">
           <a class="profile-link" href="/profile/">
-            <img src="#" alt="" width="30" height="30">
+            <img class="img--avatar" src="/assets/images/avatar-jessica.jpg" alt="" width="30" height="30">
           </a>
 
           <div class="dropdown">
@@ -66,6 +77,8 @@
   <main class="main" id="main" role="main">
 
     <article class="profile-settings">
+    <div class="layout-container">
+
       <h2>Settings</h2>
 
       <form class="settings-form" id="settings">
@@ -75,15 +88,15 @@
 
           <div class="account-fields">
             <label>
-              <input id="account-name" name="account-name" type="text">
+              <input class="input-field" id="account-name" name="account-name" type="text">
             </label>
 
             <label>
-              <input id="account-email" name="account-email" type="email">
+              <input class="input-field" id="account-email" name="account-email" type="email">
             </label>
 
             <label>
-              <input id="account-password" name="account-password" type="password">
+              <input class="input-field" id="account-password" name="account-password" type="password">
             </label>
           </div>
         </fieldset>
@@ -91,64 +104,66 @@
         <fieldset>
           <legend>Notifications</legend>
 
-          <label>
+          <label class="control  control--checkbox">
             <input type="checkbox">
-            <span class="label-text">Email me when my posts are marked as favourites</span>
+            <span class="control-label">Email me when my posts are marked as favourites</span>
           </label>
 
-          <label>
+          <label class="control  control--checkbox">
             <input type="checkbox">
-            <span class="label-text">Email me when I’m mentioned</span>
+            <span class="control-label">Email me when I’m mentioned</span>
           </label>
 
-          <label>
+          <label class="control  control--checkbox">
             <input type="checkbox">
-            <span class="label-text">Email me when I get a reply</span>
+            <span class="control-label">Email me when I get a reply</span>
           </label>
 
-          <label>
+          <label class="control  control--checkbox">
             <input type="checkbox">
-            <span class="label-text">Email me when someone follows me</span>
+            <span class="control-label">Email me when someone follows me</span>
           </label>
         </fieldset>
 
         <fieldset>
           <legend>Privacy</legend>
 
-          <label>
+          <label class="control  control--radio">
             <input name="tag-pref" type="radio">
-            <span class="label-text">Allow anyone to tag me</span>
+            <span class="control-label">Allow anyone to tag me</span>
           </label>
 
-          <label>
+          <label class="control  control--radio">
             <input name="tag-pref" type="radio" checked>
-            <span class="label-text">Only allow people I follow to tag me</span>
+            <span class="control-label">Only allow people I follow to tag me</span>
           </label>
 
-          <label>
+          <label class="control  control--radio">
             <input name="tag-pref" type="radio">
-            <span class="label-text">Don’t allow anyone to tag me</span>
+            <span class="control-label">Don’t allow anyone to tag me</span>
           </label>
 
-          <label>
+          <label class="control  control--checkbox">
             <input type="checkbox">
-            <span class="label-text">Add a location to my posts</span>
+            <span class="control-label">Add a location to my posts</span>
           </label>
 
-          <label>
+          <label class="control  control--checkbox">
             <input type="checkbox">
-            <span class="label-text">Let others find me by my email address</span>
+            <span class="control-label">Let others find me by my email address</span>
           </label>
 
-          <label>
+          <label class="control  control--checkbox">
             <input type="checkbox">
-            <span class="label-text">Tailor ads based on my information</span>
+            <span class="control-label">Tailor ads based on my information</span>
           </label>
         </fieldset>
 
         <button class="button" type="submit">Save changes</button>
 
       </form>
+
+    </div>
     </article>
 
   </main>
