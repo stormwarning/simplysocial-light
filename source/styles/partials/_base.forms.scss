@@ -29,6 +29,15 @@ label {
 }
 
 
+.input {
+  position: relative;
+
+  > input {
+    padding-left: ($layout-gutter * 2);
+  }
+}
+
+
 .input-field {
   padding: 0.8rem 1rem;
   font-family: $font-body;
@@ -48,6 +57,14 @@ label {
     outline: none;
     box-shadow: inset 8px 0 0 -4px $color-link;
   }
+}
+
+
+.input-label {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  color: $brand-light;
 }
 
 

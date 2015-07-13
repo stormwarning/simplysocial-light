@@ -6,15 +6,49 @@
 .profile-settings {
   padding: 50px $layout-gutter;
 
-  fieldset {
+  .layout-container {
+    max-width: 575px;
+  }
 
-    .control {
-      display: block;
-      margin-bottom: $layout-gutter;
+  .input,
+  .control {
+    display: block;
+    margin-bottom: $layout-gutter;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+    &:last-child {
+      margin-bottom: 0;
     }
+  }
+}
+
+
+
+
+.account-settings {
+  @extend %cf;
+}
+
+
+.account-avatar {
+  float: left;
+  margin-right: 50px;
+
+  > img {
+    border-radius: $base-radius;
+  }
+}
+
+
+.account-fields {
+  padding-right: 75px;
+  overflow: hidden;
+
+  &,
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  input {
+    width: 100%;
   }
 }

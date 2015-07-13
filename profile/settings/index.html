@@ -83,20 +83,39 @@
 
       <form class="settings-form" id="settings">
 
-        <fieldset>
+        <fieldset class="account-settings">
           <legend>Account</legend>
 
+          <div class="account-avatar">
+            <img src="/assets/images/avatar-jessica.jpg" alt="" width="85" height="85">
+          </div>
+
           <div class="account-fields">
-            <label>
-              <input class="input-field" id="account-name" name="account-name" type="text">
+            <label class="input">
+              <span class="input-label">
+                <svg class="icon  icon--user">
+                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-user"></use>
+                </svg>
+              </span>
+              <input class="input-field" id="account-name" name="account-name" type="text" value="Jessica Tuan">
             </label>
 
-            <label>
-              <input class="input-field" id="account-email" name="account-email" type="email">
+            <label class="input">
+              <span class="input-label">
+                <svg class="icon  icon--mail">
+                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-mail"></use>
+                </svg>
+              </span>
+              <input class="input-field" id="account-email" name="account-email" type="email" value="jessica@mail.com">
             </label>
 
-            <label>
-              <input class="input-field" id="account-password" name="account-password" type="password">
+            <label class="input">
+              <span class="input-label">
+                <svg class="icon  icon--lock">
+                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-lock"></use>
+                </svg>
+              </span>
+              <input class="input-field" id="account-password" name="account-password" type="password" value="password">
             </label>
           </div>
         </fieldset>
