@@ -11,12 +11,12 @@
   font-family: $font-body;
   font-size: $base-font-size;
   color: $color-link;
-  text-transform: uppercase;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
   background-color: transparent;
   border: 1px solid;
+  border-radius: $base-radius;
   transition: all 0.25s $timing;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -40,6 +40,21 @@
 }
 
 
+
+
+.button--primary {
+  color: $white;
+  background-color: $green;
+  border-color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $green;
+    background-color: $white;
+    border-color: $green;
+  }
+}
 
 
 .button--link {
