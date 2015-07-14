@@ -288,6 +288,39 @@
 
   </footer>
 
+  <aside class="modal"
+         role="dialog"
+         aria-hidden="false"
+         aria-labelledby="modal-title">
+
+    <div class="modal-content"
+         id="modal-container"
+         role="document">
+
+      <h6 id="modal-title">Create new message</h6>
+      <form class="message-entry">
+        <label class="entry-field">
+          <input type="text" placeholder="What’s on your mind?">
+        </label>
+
+        <button class="button  button--link" type="button">
+          <svg class="icon  icon--photo">
+            <use xlink:href="/assets/images/sprite.symbol.svg#icon-photo"></use>
+          </svg> Add Photo
+        </button>
+        <button class="button  button--link" type="button">
+          <svg class="icon  icon--video">
+            <use xlink:href="/assets/images/sprite.symbol.svg#icon-video"></use>
+          </svg> Add Video
+        </button>
+
+        <button class="button  button--primary" type="submit">Post</button>
+      </form>
+
+    </div>
+
+  </aside>
+
 
   <script src="/assets/scripts/main.js"></script>
 
