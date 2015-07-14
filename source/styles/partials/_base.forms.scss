@@ -80,17 +80,6 @@ label {
     position: absolute;
     z-index: -1;
     opacity: 0;
-
-    &:checked ~ .control-label {
-
-      &::before {
-        background-color: $green-dark;
-      }
-
-      &::after {
-        transform: translateX(25px);
-      }
-    }
   }
 }
 
@@ -102,7 +91,7 @@ label {
   &::before,
   &::after {
     content: "";
-    transition: transform 150ms $timing;
+    transition: all 150ms $timing;
   }
 
   &::before {
@@ -129,6 +118,30 @@ label {
 
 
 
+.control--checkbox {
+
+  > input {
+
+    &:checked ~ .control-label {
+
+      &::before {
+        background-color: $green-dark;
+      }
+
+      &::after {
+        transform: translateX(25px);
+      }
+    }
+  }
+
+  .control-label {
+
+  }
+}
+
+
+
+
 .control--radio {
 
   > input {
@@ -141,7 +154,7 @@ label {
 
       &::after {
         background-color: $green-dark;
-        transform: none;
+        transform: scale(1);
       }
     }
   }
@@ -164,6 +177,7 @@ label {
       width: 15px;
       height: 15px;
       background-color: transparent;
+      transform: scale(0);
     }
   }
 }
