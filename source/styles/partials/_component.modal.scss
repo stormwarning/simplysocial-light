@@ -25,6 +25,7 @@
 
 
 .modal-content {
+  position: relative;
   display: inline-block;
   max-width: 575px;
   padding: $layout-gutter;
@@ -32,7 +33,29 @@
   background-color: $ui-dark;
   border-radius: $base-radius;
 
+  @include media-query(medium) {
+    min-width: 575px;
+  }
+
   > :last-child { margin-bottom: 0; }
+
+  .button--link {
+    margin-right: $layout-gutter;
+    color: $brand-dark;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $green-dark;
+    }
+  }
+
+  > .button {
+    position: absolute;
+    top: -27px;
+    right: -27px;
+    margin-right: 0;
+  }
 }
 
 

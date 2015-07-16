@@ -83,8 +83,8 @@
         <div>
 
           <form class="message-entry">
-            <label class="entry-field">
-              <input type="text" placeholder="What’s on your mind?">
+            <label class="input">
+              <input class="input-field" type="text" placeholder="What’s on your mind?">
             </label>
 
             <button class="button  button--link" type="button">
@@ -253,7 +253,7 @@
 
             <form class="reply-form">
               <label>
-                <input type="text" placeholder="Reply...">
+                <input class="input-field" type="text" placeholder="Reply...">
               </label>
             </form>
 
@@ -290,17 +290,23 @@
 
   <aside class="modal"
          role="dialog"
-         aria-hidden="false"
+         aria-hidden="true"
          aria-labelledby="modal-title">
 
     <div class="modal-content"
          id="modal-container"
          role="document">
 
+      <button class="button  button--link" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="/assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
       <h6 id="modal-title">Create new message</h6>
-      <form class="message-entry">
+      <form class="message-entry  message-entry--modal">
         <label class="entry-field">
-          <input type="text" placeholder="What’s on your mind?">
+          <textarea class="input-field"></textarea>
         </label>
 
         <button class="button  button--link" type="button">
