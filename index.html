@@ -47,24 +47,24 @@
           </label>
         </form>
 
-        <nav class="profile-nav" role="navigation">
+        <nav class="profile-nav" role="navigation" aria-haspopup="true">
           <a class="profile-link" href="/profile/">
             <img class="img--avatar" src="/assets/images/avatar-jessica.jpg" alt="" width="30" height="30">
           </a>
 
-          <div class="dropdown">
-            <ul class="nav  nav--stacked">
-              <li>
-                <a href="/profile/">Profile</a>
+          <div class="dropdown" aria-label="Profile menu" aria-hidden="true">
+            <ul class="nav  nav--stacked" role="menu">
+              <li role="menuitem">
+                <a href="/profile/" tabindex="-1">Profile</a>
               </li>
-              <li>
-                <a href="/profile/followers">Followers</a>
+              <li role="menuitem">
+                <a href="/profile/followers" tabindex="-1">Followers</a>
               </li>
-              <li>
-                <a href="/profile/following">Following</a>
+              <li role="menuitem">
+                <a href="/profile/following" tabindex="-1">Following</a>
               </li>
-              <li>
-                <a href="/profile/settings/">Settings</a>
+              <li role="menuitem">
+                <a href="/profile/settings/" tabindex="-1">Settings</a>
               </li>
             </ul>
           </div>
@@ -259,6 +259,47 @@
 
           </div>
         </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="/assets/images/avatar-meg.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Meg Robichaud</h5>
+            <p>My view this morning is simply beautiful...<br> <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+        </div>
+
+        <figure class="card-media">
+          <a class="js-open-modal" href="#">
+            <img src="/assets/images/card-image.jpg" alt="">
+          </a>
+        </figure>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </article>
 
     </section>
