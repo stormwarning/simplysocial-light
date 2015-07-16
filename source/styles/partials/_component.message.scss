@@ -7,28 +7,24 @@
   background-color: rgba($green-dark, 0.7);
   border-radius: $base-radius;
 
-  input {
-    padding-left: 1rem;
+  .input {
+    display: block;
+    margin-bottom: $base-line-height;
+
+    input {
+      display: block;
+      padding-left: 1rem;
+      font-size: $h2-size;
+      font-weight: 300;
+      color: $white;
+      background-color: transparent;
+      border: 0;
+    }
   }
 
   .button {
     font-size: $h6-size;
     text-transform: capitalize;
-  }
-}
-
-
-.input {
-  display: block;
-  margin-bottom: $base-line-height;
-
-  input {
-    display: block;
-    font-size: $h2-size;
-    font-weight: 300;
-    color: $white;
-    background-color: transparent;
-    border: 0;
   }
 }
 
