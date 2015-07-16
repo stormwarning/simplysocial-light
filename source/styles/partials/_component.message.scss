@@ -4,25 +4,20 @@
 .message-entry {
   position: relative;
   padding: $layout-gutter;
-  background-color: $green;
-  opacity: 0.7;
+  background-color: rgba($green-dark, 0.7);
+
+  input {
+    padding-left: 1rem;
+  }
 
   .button {
     font-size: $h6-size;
-    color: $white;
     text-transform: capitalize;
-    opacity: 0.5;
-
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: 1;
-    }
   }
 }
 
 
-.entry-field {
+.input {
   display: block;
   margin-bottom: $base-line-height;
 
@@ -33,5 +28,21 @@
     color: $white;
     background-color: transparent;
     border: 0;
+  }
+}
+
+
+
+
+.message-entry--modal {
+  padding: 0;
+  background-color: transparent;
+
+  textarea {
+    width: 100%;
+  }
+
+  .button--primary {
+    float: right;
   }
 }
