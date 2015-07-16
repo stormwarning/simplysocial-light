@@ -36,6 +36,11 @@
     display: inline-block;
     vertical-align: middle;
   }
+
+  > .button {
+    padding-right: $layout-gutter;
+    padding-left: $layout-gutter;
+  }
 }
 
 
