@@ -43,21 +43,29 @@
 
 
 .button--primary {
+  font-weight: 500;
   color: $white;
-  background-color: $green;
-  border-color: $white;
+  background-color: $green-dark;
+  border: 0;
 
   &:hover,
   &:focus,
   &:active {
-    color: $green;
-    background-color: $white;
-    border-color: $green;
+    background-color: $green;
   }
 }
 
 
 .button--link {
+  padding-right: 0;
+  padding-left: 0;
   background-color: transparent;
   border: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $green-dark;
+    background-color: transparent;
+  }
 }
