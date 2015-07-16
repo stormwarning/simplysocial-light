@@ -73,10 +73,12 @@
 
 .card-actions {
   position: absolute;
-  top: 0;
+  top: 14px;
   right: 0;
 
   .button {
+    padding-right: ($layout-gutter / 2);
+    padding-left: ($layout-gutter / 2);
     color: $brand-light;
 
     &:hover,
