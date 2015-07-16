@@ -36,6 +36,19 @@
     min-width: 575px;
     margin: auto;
   }
+
+  .button {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: $white;
+    opacity: 0.5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 
@@ -53,6 +66,13 @@
 
     &:last-child {
       float: right;
+
+      a {
+
+        &.is-active {
+          border-bottom: 0;
+        }
+      }
     }
 
     li {
@@ -68,10 +88,17 @@
       padding-bottom: 0;
       font-weight: 800;
       line-height: 56px;
-      color: $white;
+      color: $brand-light;
       text-transform: uppercase;
 
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+      }
+
       &.is-active {
+        color: $white;
         border-bottom: 4px solid $green;
       }
     }
