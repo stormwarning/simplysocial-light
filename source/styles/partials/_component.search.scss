@@ -20,6 +20,8 @@
   button {
     position: absolute;
     right: 0;
+    padding-right: ($layout-gutter / 2);
+    padding-left: ($layout-gutter / 2);
   }
 
   .icon {
