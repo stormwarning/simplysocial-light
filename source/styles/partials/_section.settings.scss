@@ -39,7 +39,16 @@
   margin-right: 50px;
 
   > img {
+    display: block;
+    margin-bottom: ($base-line-height / 2);
     border-radius: $base-radius;
+  }
+
+  .button {
+    width: 100%;
+    padding: 0 1rem;
+    line-height: 1.6;
+    color: $brand-light;
   }
 }
 
