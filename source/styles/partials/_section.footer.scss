@@ -12,6 +12,10 @@
 
 .footer-nav {
 
+  li {
+    font-size: $milli-size;
+  }
+
   .nav,
   .footer-text {
     display: inline-block;
@@ -22,4 +26,5 @@
 
 .footer-text {
   margin-bottom: 0;
+  margin-left: ($layout-gutter / 2);
 }
