@@ -7,8 +7,8 @@ form {
 
 
 fieldset {
-  padding: 50px 0;
-  margin-bottom: 50px;
+  padding: 30px 0 50px;
+  margin: 0 0 50px;
   border: 0;
   border-bottom: 1px solid $ui-light;
 }
@@ -48,14 +48,14 @@ label {
   border: 1px solid $ui-dark;
   border-radius: $base-radius;
   box-shadow: none;
-  transition: box-shadow 0.25s $timing;
+  transition: all 150ms $timing;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
 
   &:focus {
+    border-color: $blue;
     outline: none;
-    box-shadow: inset 8px 0 0 -4px $color-link;
   }
 }
 
@@ -80,6 +80,14 @@ label {
     position: absolute;
     z-index: -1;
     opacity: 0;
+
+    &:focus ~ .control-label {
+
+      &::before,
+      &::after {
+        opacity: 0.6;
+      }
+    }
   }
 }
 
