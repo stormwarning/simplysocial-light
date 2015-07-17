@@ -7,12 +7,12 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="/assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
 
-  <script src="/assets/scripts/modernizr.js"></script>
+  <script src="assets/scripts/modernizr.js"></script>
 </head>
 <body>
   <!--[if lt IE 8]>
@@ -24,15 +24,15 @@
 
       <a class="logo" href="/">
         <svg class="icon  icon--logo">
-          <use xlink:href="/assets/images/sprite.symbol.svg#icon-logo"></use>
+          <use xlink:href="assets/images/sprite.symbol.svg#icon-logo"></use>
         </svg>
         <h1>Simply<span>Social</span></h1>
       </a>
 
       <div class="header-controls">
-        <button class="button  button--link  js-open-message-modal" type="button">
+        <button class="button  button--link  js-toggle-modal" data-toggle="modal" type="button">
           <svg class="icon  icon--compose">
-            <use xlink:href="/assets/images/sprite.symbol.svg#icon-compose"></use>
+            <use xlink:href="assets/images/sprite.symbol.svg#icon-compose"></use>
           </svg>
         </button>
 
@@ -41,30 +41,30 @@
             <input class="input-field" type="search">
             <button class="button  button--link" type="submit">
               <svg class="icon  icon--search">
-                <use xlink:href="/assets/images/sprite.symbol.svg#icon-search"></use>
+                <use xlink:href="assets/images/sprite.symbol.svg#icon-search"></use>
               </svg>
             </button>
           </label>
         </form>
 
         <nav class="profile-nav" role="navigation" aria-haspopup="true">
-          <a class="profile-link" href="/profile/">
-            <img class="img--avatar" src="/assets/images/avatar-jessica.jpg" alt="" width="30" height="30">
+          <a class="profile-link  js-toggle-dropdown" href="profile/">
+            <img class="img--avatar" src="assets/images/avatar-jessica.jpg" alt="" width="30" height="30">
           </a>
 
           <div class="dropdown" aria-label="Profile menu" aria-hidden="true">
             <ul class="nav  nav--stacked" role="menu">
               <li role="menuitem">
-                <a href="/profile/" tabindex="-1">Profile</a>
+                <a href="profile/" tabindex="-1">Profile</a>
               </li>
               <li role="menuitem">
-                <a href="/profile/followers" tabindex="-1">Followers</a>
+                <a href="profile/followers" tabindex="-1">Followers</a>
               </li>
               <li role="menuitem">
-                <a href="/profile/following" tabindex="-1">Following</a>
+                <a href="profile/following" tabindex="-1">Following</a>
               </li>
               <li role="menuitem">
-                <a href="/profile/settings/" tabindex="-1">Settings</a>
+                <a href="profile/settings/" tabindex="-1">Settings</a>
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@
   <main class="main" id="main" role="main">
 
     <section class="hero">
-      <div class="hero-image" style="background-image:url(/assets/images/hero-image.jpg);"></div>
+      <div class="hero-image" style="background-image:url(assets/images/hero-image.jpg);"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <div>
@@ -89,12 +89,12 @@
 
             <button class="button  button--link" type="button">
               <svg class="icon  icon--photo">
-                <use xlink:href="/assets/images/sprite.symbol.svg#icon-photo"></use>
+                <use xlink:href="assets/images/sprite.symbol.svg#icon-photo"></use>
               </svg> Add Photo
             </button>
             <button class="button  button--link" type="button">
               <svg class="icon  icon--video">
-                <use xlink:href="/assets/images/sprite.symbol.svg#icon-video"></use>
+                <use xlink:href="assets/images/sprite.symbol.svg#icon-video"></use>
               </svg> Add Video
             </button>
           </form>
@@ -105,10 +105,10 @@
                 <a class="is-active" href="/">All Posts</a>
               </li>
               <li>
-                <a href="/photos/">Photos</a>
+                <a href="photos/">Photos</a>
               </li>
               <li>
-                <a href="/videos/">Videos</a>
+                <a href="videos/">Videos</a>
               </li>
             </ul>
 
@@ -116,14 +116,14 @@
               <li>
                 <a class="is-active" href="/">
                   <svg class="icon  icon--list">
-                    <use xlink:href="/assets/images/sprite.symbol.svg#icon-list"></use>
+                    <use xlink:href="assets/images/sprite.symbol.svg#icon-list"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="/tile/">
+                <a href="tile/">
                   <svg class="icon  icon--grid">
-                    <use xlink:href="/assets/images/sprite.symbol.svg#icon-grid"></use>
+                    <use xlink:href="assets/images/sprite.symbol.svg#icon-grid"></use>
                   </svg>
                 </a>
               </li>
@@ -138,7 +138,7 @@
 
       <article class="card">
         <div class="card-body">
-          <img class="img--avatar" src="/assets/images/avatar-sam.jpg" alt="" width="40" height="40">
+          <img class="img--avatar" src="assets/images/avatar-sam.jpg" alt="" width="40" height="40">
 
           <div class="card-text">
             <h5 class="card-title">Sam Soffes</h5>
@@ -151,14 +151,14 @@
             <li>
               <button class="button  button--link" type="button">
                 <svg class="icon  icon--reply">
-                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-reply"></use>
+                  <use xlink:href="assets/images/sprite.symbol.svg#icon-reply"></use>
                 </svg>
               </button>
             </li>
             <li>
               <button class="button  button--link" type="button">
                 <svg class="icon  icon--heart">
-                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-heart"></use>
+                  <use xlink:href="assets/images/sprite.symbol.svg#icon-heart"></use>
                 </svg>
               </button>
             </li>
@@ -177,7 +177,7 @@
 
             <div class="card-reply">
               <div class="card-body">
-                <img class="img--avatar" src="/assets/images/avatar-jed.jpg" alt="" width="40" height="40">
+                <img class="img--avatar" src="assets/images/avatar-jed.jpg" alt="" width="40" height="40">
 
                 <div class="card-text">
                   <h5 class="card-title">Jed Bridges</h5>
@@ -191,14 +191,14 @@
                     <li>
                       <button class="button  button--link" type="button">
                         <svg class="icon  icon--reply">
-                          <use xlink:href="/assets/images/sprite.symbol.svg#icon-reply"></use>
+                          <use xlink:href="assets/images/sprite.symbol.svg#icon-reply"></use>
                         </svg>
                       </button>
                     </li>
                     <li>
                       <button class="button  button--link" type="button">
                         <svg class="icon  icon--heart">
-                          <use xlink:href="/assets/images/sprite.symbol.svg#icon-heart"></use>
+                          <use xlink:href="assets/images/sprite.symbol.svg#icon-heart"></use>
                         </svg>
                       </button>
                     </li>
@@ -214,7 +214,7 @@
 
             <div class="card-reply">
               <div class="card-body">
-                <img class="img--avatar" src="/assets/images/avatar-ren.jpg" alt="" width="40" height="40">
+                <img class="img--avatar" src="assets/images/avatar-ren.jpg" alt="" width="40" height="40">
 
                 <div class="card-text">
                   <h5 class="card-title">Ren Walker</h5>
@@ -228,14 +228,14 @@
                     <li>
                       <button class="button  button--link" type="button">
                         <svg class="icon  icon--reply">
-                          <use xlink:href="/assets/images/sprite.symbol.svg#icon-reply"></use>
+                          <use xlink:href="assets/images/sprite.symbol.svg#icon-reply"></use>
                         </svg>
                       </button>
                     </li>
                     <li>
                       <button class="button  button--link" type="button">
                         <svg class="icon  icon--heart">
-                          <use xlink:href="/assets/images/sprite.symbol.svg#icon-heart"></use>
+                          <use xlink:href="assets/images/sprite.symbol.svg#icon-heart"></use>
                         </svg>
                       </button>
                     </li>
@@ -261,7 +261,7 @@
 
       <article class="card">
         <div class="card-body">
-          <img class="img--avatar" src="/assets/images/avatar-meg.jpg" alt="" width="40" height="40">
+          <img class="img--avatar" src="assets/images/avatar-meg.jpg" alt="" width="40" height="40">
 
           <div class="card-text">
             <h5 class="card-title">Meg Robichaud</h5>
@@ -271,7 +271,7 @@
 
         <figure class="card-media">
           <a class="js-open-modal" href="#">
-            <img src="/assets/images/card-image.jpg" alt="">
+            <img src="assets/images/card-image.jpg" alt="">
           </a>
         </figure>
 
@@ -280,14 +280,14 @@
             <li>
               <button class="button  button--link" type="button">
                 <svg class="icon  icon--reply">
-                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-reply"></use>
+                  <use xlink:href="assets/images/sprite.symbol.svg#icon-reply"></use>
                 </svg>
               </button>
             </li>
             <li>
               <button class="button  button--link" type="button">
                 <svg class="icon  icon--heart">
-                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-heart"></use>
+                  <use xlink:href="assets/images/sprite.symbol.svg#icon-heart"></use>
                 </svg>
               </button>
             </li>
@@ -309,16 +309,16 @@
     <nav class="footer-nav" role="navigation">
       <ul class="nav">
         <li>
-          <a href="/about/">About Us</a>
+          <a href="about/">About Us</a>
         </li>
         <li>
-          <a href="/support/">Support</a>
+          <a href="support/">Support</a>
         </li>
         <li>
-          <a href="/privacy/">Privacy</a>
+          <a href="privacy/">Privacy</a>
         </li>
         <li>
-          <a href="/terms/">Terms</a>
+          <a href="terms/">Terms</a>
         </li>
       </ul>
 
@@ -336,9 +336,9 @@
          id="modal-container"
          role="document">
 
-      <button class="button  button--link" type="button">
+      <button class="button  button--link  js-toggle-modal" data-toggle="modal" type="button">
         <svg class="icon  icon--close">
-          <use xlink:href="/assets/images/sprite.symbol.svg#icon-close"></use>
+          <use xlink:href="assets/images/sprite.symbol.svg#icon-close"></use>
         </svg>
       </button>
 
@@ -350,16 +350,16 @@
 
         <button class="button  button--link" type="button">
           <svg class="icon  icon--photo">
-            <use xlink:href="/assets/images/sprite.symbol.svg#icon-photo"></use>
+            <use xlink:href="assets/images/sprite.symbol.svg#icon-photo"></use>
           </svg> Add Photo
         </button>
         <button class="button  button--link" type="button">
           <svg class="icon  icon--video">
-            <use xlink:href="/assets/images/sprite.symbol.svg#icon-video"></use>
+            <use xlink:href="assets/images/sprite.symbol.svg#icon-video"></use>
           </svg> Add Video
         </button>
 
-        <button class="button  button--primary" type="submit">Post</button>
+        <button class="button  button--primary  js-toggle-modal" data-toggle="modal" type="submit">Post</button>
       </form>
 
     </div>
@@ -367,7 +367,8 @@
   </aside>
 
 
-  <script src="/assets/scripts/main.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
 
 </body>
 </html>
