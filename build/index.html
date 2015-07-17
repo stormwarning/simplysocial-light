@@ -135,6 +135,7 @@
     </section>
 
     <section class="posts  posts--list-view">
+    <div class="layout-container">
 
       <article class="card">
         <div class="card-body">
@@ -171,9 +172,9 @@
         </nav>
 
         <div class="card-footer">
-          <a class="footer-link  js-show-replies" href="#replies-to-0001" role="tab" aria-expanded="false" aria-controls="replies-to-0001">Expand</a>
+          <a class="footer-link  js-toggle-replies" href="#replies-to-0001" aria-expanded="false" aria-controls="replies-to-0001">Expand</a>
 
-          <div class="card-replies" id="replies-to-0001" role="tabpanel">
+          <div class="card-replies" id="replies-to-0001" aria-hidden="true">
 
             <div class="card-reply">
               <div class="card-body">
@@ -300,6 +301,7 @@
         </nav>
       </article>
 
+    </div>
     </section>
 
   </main>

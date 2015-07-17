@@ -4,8 +4,12 @@
  * Display all posts, either in a list or grid layout.
  */
 .posts {
-  padding: 50px $layout-gutter;
+  padding: 50px 0;
   text-align: center;
+
+  .layout-container {
+    max-width: 1170px;
+  }
 }
 
 
@@ -15,5 +19,17 @@
 
   .card {
     max-width: 575px;
+    margin-bottom: $base-line-height;
+  }
+}
+
+
+
+
+.posts--grid-view {
+
+  .card {
+    max-width: 375px;
+    margin-bottom: $layout-gutter;
   }
 }
