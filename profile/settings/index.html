@@ -1,0 +1,218 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Simply Social</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="/assets/styles/main.css">
+
+  <script src="/assets/scripts/modernizr.js"></script>
+</head>
+<body>
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <header class="site-header" id="top">
+    <div class="layout-container">
+
+      <a class="logo" href="/">
+        <svg class="icon  icon--logo">
+          <use xlink:href="/assets/images/sprite.symbol.svg#icon-logo"></use>
+        </svg>
+        <h1>Simply<span>Social</span></h1>
+      </a>
+
+      <div class="header-controls">
+        <button class="button  button--link  js-open-message-modal" type="button">
+          <svg class="icon  icon--compose">
+            <use xlink:href="/assets/images/sprite.symbol.svg#icon-compose"></use>
+          </svg>
+        </button>
+
+        <form class="site-search">
+          <label>
+            <input class="input-field" type="search">
+            <button class="button  button--link" type="submit">
+              <svg class="icon  icon--search">
+                <use xlink:href="/assets/images/sprite.symbol.svg#icon-search"></use>
+              </svg>
+            </button>
+          </label>
+        </form>
+
+        <nav class="profile-nav" role="navigation">
+          <a class="profile-link" href="/profile/">
+            <img class="img--avatar" src="/assets/images/avatar-jessica.jpg" alt="" width="30" height="30">
+          </a>
+
+          <div class="dropdown">
+            <ul class="nav  nav--stacked">
+              <li>
+                <a href="/profile/">Profile</a>
+              </li>
+              <li>
+                <a href="/profile/followers">Followers</a>
+              </li>
+              <li>
+                <a href="/profile/following">Following</a>
+              </li>
+              <li>
+                <a href="/profile/settings/">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main" id="main" role="main">
+
+    <article class="profile-settings">
+    <div class="layout-container">
+
+      <h2>Settings</h2>
+
+      <form class="settings-form" id="settings">
+
+        <fieldset class="account-settings">
+          <legend>Account</legend>
+
+          <div class="account-avatar">
+            <img src="/assets/images/avatar-jessica.jpg" alt="" width="85" height="85">
+            <button class="button" type="button">Change</button>
+          </div>
+
+          <div class="account-fields">
+            <label class="input">
+              <span class="input-label">
+                <svg class="icon  icon--user">
+                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-user"></use>
+                </svg>
+              </span>
+              <input class="input-field" id="account-name" name="account-name" type="text" value="Jessica Tuan">
+            </label>
+
+            <label class="input">
+              <span class="input-label">
+                <svg class="icon  icon--mail">
+                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-mail"></use>
+                </svg>
+              </span>
+              <input class="input-field" id="account-email" name="account-email" type="email" value="jessica@mail.com">
+            </label>
+
+            <label class="input">
+              <span class="input-label">
+                <svg class="icon  icon--lock">
+                  <use xlink:href="/assets/images/sprite.symbol.svg#icon-lock"></use>
+                </svg>
+              </span>
+              <input class="input-field" id="account-password" name="account-password" type="password" value="password">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Notifications</legend>
+
+          <label class="control  control--checkbox">
+            <input type="checkbox">
+            <span class="control-label">Email me when my posts are marked as favourites</span>
+          </label>
+
+          <label class="control  control--checkbox">
+            <input type="checkbox" checked>
+            <span class="control-label">Email me when I’m mentioned</span>
+          </label>
+
+          <label class="control  control--checkbox">
+            <input type="checkbox" checked>
+            <span class="control-label">Email me when I get a reply</span>
+          </label>
+
+          <label class="control  control--checkbox">
+            <input type="checkbox">
+            <span class="control-label">Email me when someone follows me</span>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Privacy</legend>
+
+          <label class="control  control--radio">
+            <input name="tag-pref" type="radio">
+            <span class="control-label">Allow anyone to tag me</span>
+          </label>
+
+          <label class="control  control--radio">
+            <input name="tag-pref" type="radio" checked>
+            <span class="control-label">Only allow people I follow to tag me</span>
+          </label>
+
+          <label class="control  control--radio">
+            <input name="tag-pref" type="radio">
+            <span class="control-label">Don’t allow anyone to tag me</span>
+          </label>
+
+          <label class="control  control--checkbox">
+            <input type="checkbox">
+            <span class="control-label">Add a location to my posts</span>
+          </label>
+
+          <label class="control  control--checkbox">
+            <input type="checkbox">
+            <span class="control-label">Let others find me by my email address</span>
+          </label>
+
+          <label class="control  control--checkbox">
+            <input type="checkbox" checked>
+            <span class="control-label">Tailor ads based on my information</span>
+          </label>
+        </fieldset>
+
+        <button class="button  button--primary" type="submit">Save changes</button>
+
+      </form>
+
+    </div>
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <nav class="footer-nav" role="navigation">
+      <ul class="nav">
+        <li>
+          <a href="/about/">About Us</a>
+        </li>
+        <li>
+          <a href="/support/">Support</a>
+        </li>
+        <li>
+          <a href="/privacy/">Privacy</a>
+        </li>
+        <li>
+          <a href="/terms/">Terms</a>
+        </li>
+      </ul>
+
+      <p class="footer-text">&copy; 2014 SimplySocial</p>
+    </nav>
+
+  </footer>
+
+
+  <script src="/assets/scripts/main.js"></script>
+
+</body>
+</html>
