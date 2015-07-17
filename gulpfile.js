@@ -19,9 +19,9 @@ var source = {
 };
 var assets = {
 
-  styles: 'assets/styles',
-  scripts: 'assets/scripts',
-  images: 'assets/images'
+  styles: 'build/assets/styles',
+  scripts: 'build/assets/scripts',
+  images: 'build/assets/images'
 
 };
 
@@ -64,6 +64,7 @@ gulp.task( 'styles', function() {
 gulp.task( 'scripts', function() {
 
   return gulp.src( source.scripts )
+    .pipe( $.concat( 'main.js' ) )
     .pipe( $.uglify() )
     .pipe( gulp.dest( assets.scripts ) );
 
@@ -98,7 +99,7 @@ gulp.task( 'sprite', function() {
         sprite: 'sprite.symbol.svg'
       }
     }
-  }) ).on('error', function(error){ console.log(error); })
+  }) ).on( 'error', function( error ) { console.log( error ); })
   .pipe( gulp.dest( assets.images ) );
 
 });
@@ -109,7 +110,9 @@ gulp.task( 'serve', ['styles'], function() {
   browserSync({
     notify: false,
     logPrefix: '⎋',
-    server: './'
+    server: {
+      baseDir: 'build'
+    }
   });
 
   gulp.watch( ['**/*.html'], reload );
