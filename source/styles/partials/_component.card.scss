@@ -6,6 +6,7 @@
 .card {
   position: relative;
   display: inline-block;
+  overflow: hidden;
   text-align: left;
   border: 1px solid $ui-dark;
   border-radius: $base-radius;
@@ -94,7 +95,7 @@
 
 
 .card-footer {
-
+  margin-bottom: -1px;
 }
 
 
@@ -131,6 +132,14 @@
 
 .card-replies {
   border-top: 1px solid $ui-dark;
+
+  &[aria-hidden="true"] {
+    height: 0;
+  }
+
+  &[aria-hidden="false"] {
+    height: auto;
+  }
 }
 
 
