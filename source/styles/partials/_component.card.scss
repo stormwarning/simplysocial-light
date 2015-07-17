@@ -8,6 +8,7 @@
   display: inline-block;
   overflow: hidden;
   text-align: left;
+  background-color: $white;
   border: 1px solid $ui-dark;
   border-radius: $base-radius;
 
@@ -36,6 +37,7 @@
 .card-body {
   @extend %cf;
 
+  position: relative;
   padding: 25px 50px 25px 25px;
 
   > img {
@@ -119,7 +121,7 @@
 
 
 .reply-form {
-  padding: 25px;
+  padding: $base-line-height;
   background-color: $ui-light;
 
   input {

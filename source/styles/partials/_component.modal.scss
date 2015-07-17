@@ -28,7 +28,6 @@
   position: relative;
   display: inline-block;
   max-width: 575px;
-  padding: $layout-gutter;
   margin: auto;
   background-color: $ui-dark;
   border-radius: $base-radius;
@@ -38,6 +37,14 @@
   }
 
   > :last-child { margin-bottom: 0; }
+
+  .card {
+    border: 0;
+  }
+
+  .reply-form {
+    padding: ($base-line-height / 2) $base-line-height;
+  }
 
   .button--link {
     margin-right: $layout-gutter;
@@ -69,7 +76,8 @@
 .modal-open {
 
   .site-header,
-  .main {
+  .main,
+  .site-footer {
     filter: blur(10px);
   }
 }
