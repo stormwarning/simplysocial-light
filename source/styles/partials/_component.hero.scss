@@ -67,6 +67,10 @@
     &:last-child {
       float: right;
 
+      li {
+        margin-right: 0;
+      }
+
       a {
 
         &.is-active {
