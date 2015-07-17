@@ -8,17 +8,19 @@ $(function() {
 
   $( '.js-toggle-modal' ).click(function( e ) {
 
+    var $target = $( $( this ).data( 'toggle' ) );
+
     e.preventDefault();
-    $( '.modal' ).toggleClass( 'is-open' );
+    $target.toggleClass( 'is-open' );
     $( 'body' ).toggleClass( 'modal-open' );
 
-    if ( 'true' === $( '.modal' ).attr( 'aria-hidden' ) ) {
+    if ( 'true' === $target.attr( 'aria-hidden' ) ) {
 
-      $( '.modal' ).attr( 'aria-hidden', 'false' );
+      $target.attr( 'aria-hidden', 'false' );
 
     } else {
 
-      $( '.modal' ).attr( 'aria-hidden', 'true' );
+      $target.attr( 'aria-hidden', 'true' );
 
     }
 
