@@ -37,6 +37,12 @@
 
   textarea {
     width: 100%;
+    margin-bottom: ($base-line-height / 2);
+  }
+
+  .button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .button--primary {
