@@ -39,14 +39,15 @@
         </button>
 
         <form class="site-search">
-          <label>
-            <input class="input-field" type="search">
-            <button class="button  button--link" type="submit">
-              <svg class="icon  icon--search">
-                <use xlink:href="../../assets/images/sprite.symbol.svg#icon-search"></use>
-              </svg>
-            </button>
+          <label class="search-label  js-toggle-expand" data-toggle="#search-input" aria-controls="search-input" for="search-input">
+            <svg class="icon  icon--search">
+              <use xlink:href="../../assets/images/sprite.symbol.svg#icon-search"></use>
+            </svg>
           </label>
+          <span class="search-input" id="search-input" aria-hidden="true">
+            <input class="input-field" type="search">
+            <input class="search-submit" type="submit" value="Search">
+          </span>
         </form>
 
         <nav class="profile-nav" role="navigation" aria-haspopup="true">
