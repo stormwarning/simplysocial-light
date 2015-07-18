@@ -99,6 +99,10 @@
 .modal--with-media {
 
   .modal-content {
+    max-width: 975px;
     padding: 0;
+    margin: 50px auto;
+
+    > :last-child { margin-bottom: 50px; }
   }
 }
