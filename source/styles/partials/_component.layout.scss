@@ -1,12 +1,16 @@
 /**
  * Layout container elements.
- * 
+ *
  * Compose a custom grid system with these base blocks.
  */
 .layout-container {
   max-width: $site-width;
-  padding: 0 $layout-gutter;
+  padding: 0 ($layout-gutter / 2);
   margin: 0 auto;
+
+  @include media-query(medium) {
+    padding: 0 $layout-gutter;
+  }
 }
 
 

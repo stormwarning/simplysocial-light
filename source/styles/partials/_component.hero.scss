@@ -84,10 +84,16 @@
     }
 
     li {
-      margin-right: $layout-gutter;
+
+      @include media-query(medium) {
+        margin-right: $layout-gutter;
+      }
 
       &:last-child {
-        margin-right: 0;
+
+        @include media-query(medium) {
+          margin-right: 0;
+        }
       }
     }
 

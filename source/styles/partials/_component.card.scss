@@ -4,6 +4,8 @@
  * Mixed media content elements arranged in a grid.
  */
 .card {
+  @extend %cf;
+
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -39,11 +41,19 @@
   @extend %cf;
 
   position: relative;
-  padding: 25px 50px 25px 25px;
+  padding: ($layout-gutter / 2);
+
+  @include media-query(medium) {
+    padding: 25px 50px 25px 25px;
+  }
 
   > img {
     float: left;
-    margin-right: $layout-gutter;
+    margin-right: ($layout-gutter / 2);
+
+    @include media-query(medium) {
+      margin-right: $layout-gutter;
+    }
   }
 }
 
@@ -69,16 +79,26 @@
 
 
 .card-media {
-  margin: 0;
+  margin: 0 0 ($base-line-height / 4);
+
+  @include media-query(medium) {
+    margin-bottom: 0;
+  }
 }
 
 
 
 
 .card-actions {
-  position: absolute;
-  top: 14px;
-  right: 0;
+  float: right;
+  margin-top: -6px;
+
+  @include media-query(medium) {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    margin-top: 0;
+  }
 
   .button {
     padding-right: ($layout-gutter / 2);
@@ -105,8 +125,13 @@
 .footer-link {
   position: relative;
   display: inline-block;
-  margin-bottom: $base-line-height;
-  margin-left: 85px;
+  margin-bottom: ($base-line-height / 2);
+  margin-left: 60px;
+
+  @include media-query(medium) {
+    margin-bottom: $base-line-height;
+    margin-left: 85px;
+  }
 
   &::after {
     display: inline-block;
@@ -130,8 +155,12 @@
 
 
 .reply-form {
-  padding: $base-line-height;
+  padding: ($base-line-height / 2);
   background-color: $ui-light;
+
+  @include media-query(medium) {
+    padding: $base-line-height;
+  }
 
   input {
     width: 100%;
@@ -142,6 +171,7 @@
 
 
 .card-replies {
+  overflow: hidden;
   border-top: 1px solid $ui-dark;
 
   &[aria-hidden="true"] {
@@ -155,6 +185,8 @@
 
 
 .card-reply {
+  @extend %cf;
+
   position: relative;
   background-color: $ui-light;
   border-bottom: 1px solid $ui-dark;

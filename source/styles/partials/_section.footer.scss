@@ -2,12 +2,16 @@
  * Site footer.
  */
 .site-footer {
-  padding: ($layout-gutter * 1.5) $layout-gutter;
+  padding: ($layout-gutter * 1.5) ($layout-gutter / 2);
   font-size: $milli-size;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid $ui-dark;
+
+  @include media-query(medium) {
+    padding: ($layout-gutter * 1.5) $layout-gutter;
+  }
 }
 
 

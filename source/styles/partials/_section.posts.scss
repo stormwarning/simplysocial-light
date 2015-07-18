@@ -4,8 +4,12 @@
  * Display all posts, either in a list or grid layout.
  */
 .posts {
-  padding: 50px 0;
+  padding: 25px 0;
   text-align: center;
+
+  @include media-query(medium) {
+    padding: 50px 0;
+  }
 
   .layout-container {
     max-width: 1170px;
