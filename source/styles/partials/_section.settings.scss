@@ -4,7 +4,11 @@
  * Display profile setings form options.
  */
 .profile-settings {
-  padding: 50px $layout-gutter;
+  padding: 25px ($layout-gutter / 2);
+
+  @include media-query(medium) {
+    padding: 50px 0;
+  }
 
   .layout-container {
     max-width: 575px;
@@ -13,7 +17,11 @@
   .input,
   .control {
     display: block;
-    margin-bottom: $layout-gutter;
+    margin-bottom: ($base-line-height / 2);
+
+    @include media-query(medium) {
+      margin-bottom: $layout-gutter;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -35,9 +43,14 @@
 
 
 .account-avatar {
-  float: left;
-  margin-right: 50px;
+  margin-bottom: $base-line-height;
   color: $brand-light;
+
+  @include media-query(medium) {
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 
   > img {
     display: block;
@@ -46,16 +59,22 @@
   }
 
   .button {
-    width: 100%;
     padding: 0 1rem;
     line-height: 1.6;
+
+    @include media-query(medium) {
+      width: 100%;
+    }
   }
 }
 
 
 .account-fields {
-  padding-right: 75px;
   overflow: hidden;
+
+  @include media-query(medium) {
+    padding-right: 75px;
+  }
 
   &,
   > :last-child {

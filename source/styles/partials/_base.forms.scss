@@ -7,10 +7,15 @@ form {
 
 
 fieldset {
-  padding: 30px 0 50px;
-  margin: 0 0 50px;
+  padding: 30px 0 20px;
+  margin: 0 0 30px;
   border: 0;
   border-bottom: 1px solid $ui-light;
+
+  @include media-query(medium) {
+    padding: 30px 0 50px;
+    margin: 0 0 50px;
+  }
 }
 
 
@@ -95,6 +100,7 @@ label {
 .control-label {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 
   &::before,
   &::after {
@@ -104,6 +110,7 @@ label {
 
   &::before {
     display: inline-block;
+    float: left;
     width: 50px;
     height: 25px;
     margin-right: $layout-gutter;
@@ -179,7 +186,7 @@ label {
 
     &::after {
       position: absolute;
-      top: 5px;
+      top: 4px;
       left: 4px;
       display: block;
       width: 15px;
