@@ -37,6 +37,7 @@
 .account-avatar {
   float: left;
   margin-right: 50px;
+  color: $brand-light;
 
   > img {
     display: block;
@@ -48,7 +49,6 @@
     width: 100%;
     padding: 0 1rem;
     line-height: 1.6;
-    color: $brand-light;
   }
 }
 

@@ -40,6 +40,13 @@
   > .button {
     padding-right: $layout-gutter;
     padding-left: $layout-gutter;
+    color: $green-dark;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+    }
   }
 }
 
