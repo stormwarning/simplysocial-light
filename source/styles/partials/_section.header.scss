@@ -14,6 +14,10 @@
   color: $grey-light;
   background-color: $grey-black;
 
+  .layout-container {
+    background-color: $grey-black;
+  }
+
   .logo,
   .header-controls {
     line-height: 60px;
@@ -38,9 +42,12 @@
   }
 
   > .button {
-    padding-right: $layout-gutter;
-    padding-left: $layout-gutter;
-    color: $green-dark;
+    padding: 0 ($layout-gutter / 2);
+    color: $green;
+
+    @include media-query(medium) {
+      padding: 0 $layout-gutter;
+    }
 
     &:hover,
     &:focus,
@@ -55,8 +62,12 @@
 
 .profile-nav {
   position: relative;
-  margin-right: ($layout-gutter * 4);
-  margin-left: $layout-gutter;
+  margin-right: $layout-gutter;
+  margin-left: ($layout-gutter / 2);
+
+  @include media-query(medium) {
+    margin-right: ($layout-gutter * 4);
+  }
 }
 
 
@@ -80,10 +91,14 @@
 .dropdown {
   position: absolute;
   top: -9999px;
-  right: -42px; // Line-up dropdown arrow with menu arrow.
+  right: -22px; // Line-up dropdown arrow with menu arrow.
   min-width: 100px;
   border-radius: $base-radius;
   transition: opacity 150ms $timing;
+
+  @include media-query(medium) {
+    right: -42px;
+  }
 
   &.is-open {
     top: 55px;
@@ -96,19 +111,26 @@
     &:first-child {
 
       a {
-        border-top-right-radius: $base-radius;
         border-top-left-radius: $base-radius;
+
+        @include media-query(medium) {
+          border-top-right-radius: $base-radius;
+        }
 
         &::after {
           position: absolute;
           top: -16px;
-          right: $layout-gutter;
+          right: 0;
           display: inline-block;
           border: 8px solid transparent;
           border-collapse: separate;
           border-bottom-color: $ui-light;
           content: "";
           transition: all 150ms $timing;
+
+          @include media-query(medium) {
+            right: $layout-gutter;
+          }
         }
 
         &:hover,
