@@ -8,16 +8,23 @@ $(function() {
 
   $( '.js-toggle-replies' ).click(function( e ) {
 
+    var $target = $( $( this ).attr( 'href' ) );
+
     e.preventDefault();
-    $( '.card-replies' ).toggleClass( 'is-open' );
+    $( this ).toggleClass( 'is-open' );
+    $target.toggleClass( 'is-open' );
 
-    if ( 'true' === $( '.card-replies' ).attr( 'aria-hidden' ) ) {
+    if ( 'true' === $target.attr( 'aria-hidden' ) ) {
 
-      $( '.card-replies' ).attr( 'aria-hidden', 'false' );
+      $( this ).attr( 'aria-expanded', 'true' );
+      $( this ).html( 'Collapse' );
+      $target.attr( 'aria-hidden', 'false' );
 
     } else {
 
-      $( '.card-replies' ).attr( 'aria-hidden', 'true' );
+      $( this ).attr( 'aria-expanded', 'false' );
+      $( this ).html( 'Expand' );
+      $target.attr( 'aria-hidden', 'true' );
 
     }
 
