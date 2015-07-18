@@ -21,6 +21,8 @@
   ],
   "dependencies": {
     "modernizr": "~2.8.3",
-    "normalize-scss": "~3.0.3"
+    "normalize-scss": "~3.0.3",
+    "svg4everybody": "~1.0.0",
+    "fastclick": "~1.0.6"
   }
 }

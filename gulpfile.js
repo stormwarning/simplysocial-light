@@ -14,7 +14,8 @@ var source = {
   styles: 'source/styles/**/*.scss',
   scripts: 'source/scripts/*.js',
   images: 'source/images/*.{png,jpg,gif}',
-  svgs: 'source/images/*.svg'
+  svgs: 'source/images/*.svg',
+  plugins: 'source/vendor'
 
 };
 var assets = {
@@ -24,6 +25,12 @@ var assets = {
   images: 'build/assets/images'
 
 };
+var plugins = [
+
+  source.plugins + '/fastclick/lib/fastclick.js',
+  source.plugins + '/svg4everybody/svg4everybody.js'
+
+];
 
 
 // AUTOPREFIXER CONFIG ================================================
@@ -65,6 +72,15 @@ gulp.task( 'scripts', function() {
 
   return gulp.src( source.scripts )
     .pipe( $.concat( 'main.js' ) )
+    .pipe( $.uglify() )
+    .pipe( gulp.dest( assets.scripts ) );
+
+});
+
+gulp.task( 'plugins', function() {
+
+  return gulp.src( plugins )
+    .pipe( $.concat( 'plugins.js' ) )
     .pipe( $.uglify() )
     .pipe( gulp.dest( assets.scripts ) );
 
