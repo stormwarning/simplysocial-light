@@ -3,18 +3,24 @@
  */
 .message-entry {
   position: relative;
-  padding: $layout-gutter;
+  padding: ($layout-gutter / 2) 0;
   background-color: rgba($green-dark, 0.7);
   border-radius: $base-radius;
+
+  @include media-query(medium) {
+    padding: $layout-gutter;
+  }
 
   .input {
     display: block;
     margin-bottom: $base-line-height;
 
     input {
+      @include typ-font-size($h2-size);
+
       display: block;
+      max-width: 100%;
       padding-left: 1rem;
-      font-size: $h2-size;
       font-weight: 300;
       color: $white;
       background-color: transparent;
