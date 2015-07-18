@@ -3,8 +3,12 @@
  */
 .hero {
   position: relative;
-  height: 425px;
+  height: 275px;
   background-color: $grey-light;
+
+  @include media-query(medium) {
+    height: 425px;
+  }
 }
 
 
@@ -33,11 +37,11 @@
   display: flex;
 
   > div {
-
-    margin: auto;
+    margin: 15% auto auto;
 
     @include media-query(medium) {
       min-width: 575px;
+      margin: auto;
     }
   }
 
@@ -64,12 +68,22 @@
   width: 100%;
   height: 56px;
   max-width: 575px;
+  text-align: center;
+
+  @include media-query(medium) {
+    text-align: left;
+  }
 
   .nav {
     display: inline-block;
 
     &:last-child {
-      float: right;
+      display: none;
+
+      @include media-query(medium) {
+        display: block;
+        float: right;
+      }
 
       li {
         margin-right: 0;

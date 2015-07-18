@@ -31,5 +31,8 @@
 
 .footer-text {
   margin-bottom: 0;
-  margin-left: ($layout-gutter / 2);
+
+  @include media-query(medium) {
+    margin-left: ($layout-gutter / 2);
+  }
 }
