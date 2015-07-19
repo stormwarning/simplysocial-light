@@ -1,0 +1,1426 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Simply Social</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="SimplySocial">
+  <meta name="application-name" content="SimplySocial">
+
+  <link rel="stylesheet" href="../assets/styles/main.css">
+
+  <script src="../assets/scripts/modernizr.js"></script>
+</head>
+<body>
+  <!--[if lt IE 8]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="modal-overlay"></div>
+
+  <header class="site-header" id="top">
+    <div class="layout-container">
+
+      <a class="logo" href="..//">
+        <svg class="icon  icon--logo">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-logo"></use>
+        </svg>
+        <h1>Simply<span>Social</span></h1>
+      </a>
+
+      <div class="header-controls">
+        <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0001" type="button">
+          <svg class="icon  icon--compose">
+            <use xlink:href="../assets/images/sprite.symbol.svg#icon-compose"></use>
+          </svg>
+        </button>
+
+        <form class="site-search">
+          <label class="search-label  js-toggle-expand" data-toggle="#search-input" aria-controls="search-input" for="search-input">
+            <svg class="icon  icon--search">
+              <use xlink:href="../assets/images/sprite.symbol.svg#icon-search"></use>
+            </svg>
+          </label>
+          <span class="search-input" id="search-input" aria-hidden="true">
+            <input class="input-field" type="search">
+            <input class="search-submit" type="submit" value="Search">
+          </span>
+        </form>
+
+        <nav class="profile-nav" role="navigation" aria-haspopup="true">
+          <a class="profile-link  js-toggle-dropdown" href="../profile/">
+            <img class="img--avatar" src="../assets/images/avatar-jessica.jpg" alt="" width="30" height="30">
+          </a>
+
+          <div class="dropdown" aria-label="Profile menu" aria-hidden="true">
+            <ul class="nav  nav--stacked" role="menu">
+              <li role="menuitem">
+                <a href="../profile/" tabindex="-1">Profile</a>
+              </li>
+              <li role="menuitem">
+                <a href="../profile/followers" tabindex="-1">Followers</a>
+              </li>
+              <li role="menuitem">
+                <a href="../profile/following" tabindex="-1">Following</a>
+              </li>
+              <li role="menuitem">
+                <a href="../profile/settings/" tabindex="-1">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main" id="main" role="main">
+
+    <!--[if lte IE 9]>
+    <style> .hero-content { padding-top: 100px; } </style>
+    <![endif]-->
+    <section class="hero">
+      <div class="hero-image" style="background-image:url(../assets/images/hero-image.jpg);"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div>
+
+          <form class="message-entry">
+            <label class="input">
+              <input class="input-field" type="text" placeholder="What’s on your mind?">
+            </label>
+
+            <button class="button  button--link" type="button">
+              <svg class="icon  icon--photo">
+                <use xlink:href="../assets/images/sprite.symbol.svg#icon-photo"></use>
+              </svg> Add Photo
+            </button>
+            <button class="button  button--link" type="button">
+              <svg class="icon  icon--video">
+                <use xlink:href="../assets/images/sprite.symbol.svg#icon-video"></use>
+              </svg> Add Video
+            </button>
+          </form>
+
+          <nav class="post-filters" role="navigation">
+          <div class="layout-container">
+            <ul class="nav">
+              <li>
+                <a class="is-active" href="../">All Posts</a>
+              </li>
+              <li>
+                <a href="../photos/">Photos</a>
+              </li>
+              <li>
+                <a href="../videos/">Videos</a>
+              </li>
+            </ul>
+
+            <ul class="nav">
+              <li>
+                <a href="../">
+                  <svg class="icon  icon--list">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-list"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="is-active" href="../tile/">
+                  <svg class="icon  icon--grid">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-grid"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </nav>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="posts  posts--grid-view">
+    <div class="layout-container  js-masonry">
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-sam.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Sam Soffes</h5>
+            <p>How to Get Inspired: the Right Way - Designmodo <a href="http://bit.ly/1lE4uJc" rel="nofollow" target="_blank">bit.ly/1lE4uJc</a> Good stuff from <a class="user-link" href="#"><span>@</span>designmodo</a>!</p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">3m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="card-footer">
+          <a class="footer-link  js-toggle-expand" href="#replies-to-0001" aria-expanded="false" aria-controls="replies-to-0001">Expand</a>
+
+          <div class="card-replies" id="replies-to-0001" aria-hidden="true">
+
+            <div class="card-reply">
+              <div class="card-body">
+                <img class="img--avatar" src="../assets/images/avatar-jed.jpg" alt="" width="40" height="40">
+
+                <div class="card-text">
+                  <h5 class="card-title">Jed Bridges</h5>
+                  <p>Great way to start the week. Thanks for sharing!</p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <nav class="card-actions">
+                  <ul class="nav  nav--actions">
+                    <li>
+                      <button class="button  button--link" type="button">
+                        <svg class="icon  icon--reply">
+                          <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="button  button--link" type="button">
+                        <svg class="icon  icon--heart">
+                          <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li>
+                      <a class="u-url" href="#">
+                        <time class="dt-updated" pubdate datetime="[utc]">1h</time>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <div class="card-reply">
+              <div class="card-body">
+                <img class="img--avatar" src="../assets/images/avatar-ren.jpg" alt="" width="40" height="40">
+
+                <div class="card-text">
+                  <h5 class="card-title">Ren Walker</h5>
+                  <p>Feeling inspired now... thanks for great article <a class="user-link" href="#"><span>@</span>designmodo</a></p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <nav class="card-actions">
+                  <ul class="nav  nav--actions">
+                    <li>
+                      <button class="button  button--link" type="button">
+                        <svg class="icon  icon--reply">
+                          <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="button  button--link" type="button">
+                        <svg class="icon  icon--heart">
+                          <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </li>
+                    <li>
+                      <a class="u-url" href="#">
+                        <time class="dt-updated" pubdate datetime="[utc]">1h</time>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
+            <form class="reply-form">
+              <label>
+                <input class="input-field" type="text" placeholder="Reply...">
+              </label>
+            </form>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="card  card--with-image">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-meg.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Meg Robichaud</h5>
+            <p>My view this morning is simply beautiful...<br> <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+        </div>
+
+        <figure class="card-media">
+          <a class="js-toggle-modal" data-toggle="#modal-0002" href="../assets/images/photo-01-detail.jpg">
+            <img src="../assets/images/photo-01.jpg" alt="">
+          </a>
+        </figure>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-kerem.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Kerem Suer</h5>
+            <p>8 Apps to Turn Your Pipe Dreams Into Prototypes <a href="http://on.mash.to/1oubyu8" rel="nofollow" target="_blank">on.mash.to/1oubyu8</a></p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-liang.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Liang Shi</h5>
+            <p>How to get animations out of your head. <a href="http://bit.ly/1q7BngO" rel="nofollow" target="_blank">http://bit.ly/1q7BngO</a> Funny and useful.</p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">1h</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card  card--with-image">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-vitor.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Vitor Leal</h5>
+            <p>You have to see this bike. It will make your daily commute a absolute joy ride! <a href="https://vimeo.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">vimeo.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+        </div>
+
+        <figure class="card-media">
+          <a class="js-toggle-modal" data-toggle="#modal-0003" href="../assets/images/photo-01-detail.jpg">
+            <img src="../assets/images/video-02.jpg" alt="">
+          </a>
+        </figure>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">1h</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-pallavi.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Pallavi Gupta</h5>
+            <p>Need some reading? 11 free ebooks for designers | Creative Bloq <a href="http://bit.ly/1lE5QDM" rel="nofollow" target="_blank">bit.ly/1lE5QDM</a> via <a href="../user-link" href="#"><span>@</span>netmag</a></p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card  card--with-image">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-jenny.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Jenny Shen</h5>
+            <p>Perfect day to be outside taking pictures <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+        </div>
+
+        <figure class="card-media">
+          <a class="js-toggle-modal" data-toggle="#modal-0004" href="../assets/images/photo-03-detail.jpg">
+            <img src="../assets/images/photo-03.jpg" alt="">
+          </a>
+        </figure>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-jonathan.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Jonathan Moreira</h5>
+            <p>Thoughtful brand decisions vs. emotional brand decisions. <a href="http://ow.ly/vtT2i" rel="nofollow" target="_blank">ow.ly/vtT2i</a></p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-jon.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Jon Brennan</h5>
+            <p>Had some time to play with the interactive portion of
+inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/1lE5QD</a></p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card  card--with-video">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-michael.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Michael Wong</h5>
+            <p>Awesome! Check this out. <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+        </div>
+
+        <figure class="card-media">
+          <a class="js-toggle-modal" data-toggle="#modal-0005" href="../assets/images/photo-01-detail.jpg">
+            <img src="../assets/images/video-01.jpg" alt="">
+          </a>
+        </figure>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-ed.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Ed Wellbrook</h5>
+            <p><a class="user-link" href="#"><span>#</span>freelancers</a> will enjoy <a class="user-link" href="#"><span>@</span>WDTrends</a> for graphic and web design tips and inspiration.</p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-ignacio.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Ignacio Giri</h5>
+            <p>Sponsor // Bootstrap Responsive Templates <a href="http://bit.ly/1qfjLOl" rel="nofollow" target="_blank">bit.ly/1qfjLOl</a> <a class="user-link" href="#"><span>#</span>design</a></p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-lauren.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Lauren Gray</h5>
+            <p>7 Servings of Type for a Healthy Head &#38; Body <a href="http://heydesigner.net/yfwnj" rel="nofollow" target="_blank">heydesigner.net/yfwnj</a></p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card  card--with-image">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-buzz.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Buzz Usborne</h5>
+            <p>Road trip! <a href="http://bit.ly/1hkXFdK" rel="nofollow" target="_blank">bit.ly/1hkXFdK</a></p>
+          </div>
+        </div>
+
+        <figure class="card-media">
+          <a class="js-toggle-modal" data-toggle="#modal-0006" href="../assets/images/photo-02-detail.jpg">
+            <img src="../assets/images/photo-02.jpg" alt="">
+          </a>
+        </figure>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-scott.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Scott Riley</h5>
+            <p>Deal with your problems before they deal with your happiness.</p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-ryan.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Ryan O. Hicks</h5>
+            <p>Excited about <a class="user-link" href="#"><span>@</span>99U</a> Conf lineup this year <a href="http://conference.99u.com" rel="nofollow" target="_blank">conference.99u.com</a></p>
+          </div>
+        </div>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+      <article class="card  card--with-image">
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-samihah.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Samihah Azim</h5>
+            <p>Love this picture <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+        </div>
+
+        <figure class="card-media">
+          <a class="js-toggle-modal" data-toggle="#modal-0007" href="../assets/images/photo-04-detail.jpg">
+            <img src="../assets/images/photo-04.jpg" alt="">
+          </a>
+        </figure>
+
+        <nav class="card-actions">
+          <ul class="nav  nav--actions">
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--reply">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button  button--link" type="button">
+                <svg class="icon  icon--heart">
+                  <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <a class="u-url" href="#">
+                <time class="dt-updated" pubdate datetime="[utc]">50m</time>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </article>
+
+    </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <nav class="footer-nav" role="navigation">
+      <ul class="nav">
+        <li>
+          <a href="../about/">About Us</a>
+        </li>
+        <li>
+          <a href="../support/">Support</a>
+        </li>
+        <li>
+          <a href="../privacy/">Privacy</a>
+        </li>
+        <li>
+          <a href="../terms/">Terms</a>
+        </li>
+      </ul>
+
+      <p class="footer-text">&copy; 2014 SimplySocial</p>
+    </nav>
+
+  </footer>
+
+
+  <aside class="modal"
+         id="modal-0001"
+         data-toggle="#modal-0001"
+         role="dialog"
+         aria-hidden="true"
+         aria-labelledby="modal-title">
+  <div class="modal-container">
+    <div class="modal-content" role="document">
+
+      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0001" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <form class="message-entry  message-entry--modal">
+        <h6 class="modal-title" id="modal-title">Create new message</h6>
+
+        <label class="entry-field">
+          <textarea class="input-field"></textarea>
+        </label>
+
+        <button class="button  button--link" type="button">
+          <svg class="icon  icon--photo">
+            <use xlink:href="../assets/images/sprite.symbol.svg#icon-photo"></use>
+          </svg> Add Photo
+        </button>
+        <button class="button  button--link" type="button">
+          <svg class="icon  icon--video">
+            <use xlink:href="../assets/images/sprite.symbol.svg#icon-video"></use>
+          </svg> Add Video
+        </button>
+
+        <button class="button  button--primary  js-toggle-modal" data-toggle="#modal-0001" type="submit">Post</button>
+      </form>
+
+    </div>
+  </div>
+  </aside>
+
+  <aside class="modal  modal--with-media"
+         id="modal-0002"
+         data-toggle="#modal-0002"
+         role="dialog"
+         aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-content" role="document">
+
+      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0002" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <article class="card  card--with-image">
+        <figure class="card-media">
+          <img src="../assets/images/photo-01-detail.jpg" alt="">
+        </figure>
+
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-meg.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Meg Robichaud</h5>
+            <p>My view this morning is simply beautiful...<br> <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+
+          <nav class="card-actions">
+            <ul class="nav  nav--actions">
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--reply">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--heart">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="u-url" href="#">
+                  <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="card-footer">
+          <div class="card-replies  is-open" id="replies-to-0002" aria-hidden="false">
+
+            <form class="reply-form">
+              <label>
+                <input class="input-field" type="text" placeholder="Reply...">
+              </label>
+            </form>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  </aside>
+
+  <aside class="modal  modal--with-media"
+         id="modal-0003"
+         data-toggle="#modal-0003"
+         role="dialog"
+         aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-content" role="document">
+
+      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0003" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <article class="card  card--with-image">
+        <figure class="card-media">
+          <img src="../assets/images/photo-01-detail.jpg" alt="">
+        </figure>
+
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-vitor.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Vitor Leal</h5>
+            <p>You have to see this bike. It will make your daily commute a absolute joy ride! <a href="https://vimeo.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">vimeo.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+
+          <nav class="card-actions">
+            <ul class="nav  nav--actions">
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--reply">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--heart">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="u-url" href="#">
+                  <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="card-footer">
+          <div class="card-replies  is-open" id="replies-to-0003" aria-hidden="false">
+
+            <form class="reply-form">
+              <label>
+                <input class="input-field" type="text" placeholder="Reply...">
+              </label>
+            </form>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  </aside>
+
+  <aside class="modal  modal--with-media"
+         id="modal-0004"
+         data-toggle="#modal-0004"
+         role="dialog"
+         aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-content" role="document">
+
+      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0004" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <article class="card  card--with-image">
+        <figure class="card-media">
+          <img src="../assets/images/photo-03-detail.jpg" alt="">
+        </figure>
+
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-jenny.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Jenny Shen</h5>
+            <p>Perfect day to be outside taking pictures <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+
+          <nav class="card-actions">
+            <ul class="nav  nav--actions">
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--reply">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--heart">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="u-url" href="#">
+                  <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="card-footer">
+          <div class="card-replies  is-open" id="replies-to-0004" aria-hidden="false">
+
+            <form class="reply-form">
+              <label>
+                <input class="input-field" type="text" placeholder="Reply...">
+              </label>
+            </form>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  </aside>
+
+  <aside class="modal  modal--with-media"
+         id="modal-0005"
+         data-toggle="#modal-0005"
+         role="dialog"
+         aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-content" role="document">
+
+      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0005" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <article class="card  card--with-image">
+        <figure class="card-media">
+          <img src="../assets/images/photo-01-detail.jpg" alt="">
+        </figure>
+
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-michael.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Michael Wong</h5>
+            <p>Awesome! Check this out. <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+
+          <nav class="card-actions">
+            <ul class="nav  nav--actions">
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--reply">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--heart">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="u-url" href="#">
+                  <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="card-footer">
+          <div class="card-replies  is-open" id="replies-to-0005" aria-hidden="false">
+
+            <form class="reply-form">
+              <label>
+                <input class="input-field" type="text" placeholder="Reply...">
+              </label>
+            </form>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  </aside>
+
+  <aside class="modal  modal--with-media"
+         id="modal-0006"
+         data-toggle="#modal-0006"
+         role="dialog"
+         aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-content" role="document">
+
+      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0006" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <article class="card  card--with-image">
+        <figure class="card-media">
+          <img src="../assets/images/photo-02-detail.jpg" alt="">
+        </figure>
+
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-buzz.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Buzz Usborne</h5>
+            <p>Road trip! <a href="http://bit.ly/1hkXFdK" rel="nofollow" target="_blank">bit.ly/1hkXFdK</a></p>
+          </div>
+
+          <nav class="card-actions">
+            <ul class="nav  nav--actions">
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--reply">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--heart">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="u-url" href="#">
+                  <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="card-footer">
+          <div class="card-replies  is-open" id="replies-to-0006" aria-hidden="false">
+
+            <form class="reply-form">
+              <label>
+                <input class="input-field" type="text" placeholder="Reply...">
+              </label>
+            </form>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  </aside>
+
+  <aside class="modal  modal--with-media"
+         id="modal-0007"
+         data-toggle="#modal-0007"
+         role="dialog"
+         aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-content" role="document">
+
+      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0007" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <article class="card  card--with-image">
+        <figure class="card-media">
+          <img src="../assets/images/photo-04-detail.jpg" alt="">
+        </figure>
+
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-samihah.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Samihah Azim</h5>
+            <p>Love this picture <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+
+          <nav class="card-actions">
+            <ul class="nav  nav--actions">
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--reply">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--heart">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="u-url" href="#">
+                  <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="card-footer">
+          <div class="card-replies  is-open" id="replies-to-0007" aria-hidden="false">
+
+            <form class="reply-form">
+              <label>
+                <input class="input-field" type="text" placeholder="Reply...">
+              </label>
+            </form>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  </aside>
+
+  <aside class="modal  modal--with-media"
+         id="modal-0008"
+         data-toggle="#modal-0008"
+         role="dialog"
+         aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-content" role="document">
+
+      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0008" type="button">
+        <svg class="icon  icon--close">
+          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <article class="card  card--with-image">
+        <figure class="card-media">
+          <img src="../assets/images/photo-01-detail.jpg" alt="">
+        </figure>
+
+        <div class="card-body">
+          <img class="img--avatar" src="../assets/images/avatar-meg.jpg" alt="" width="40" height="40">
+
+          <div class="card-text">
+            <h5 class="card-title">Meg Robichaud</h5>
+            <p>My view this morning is simply beautiful...<br> <a href="https://instagram.com/p/mV0PUrHRwQ/" rel="nofollow" target="_blank">instagram.com/p/mV0PUrHRwQ/</a></p>
+          </div>
+
+          <nav class="card-actions">
+            <ul class="nav  nav--actions">
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--reply">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-reply"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button class="button  button--link" type="button">
+                  <svg class="icon  icon--heart">
+                    <use xlink:href="../assets/images/sprite.symbol.svg#icon-heart"></use>
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <a class="u-url" href="#">
+                  <time class="dt-updated" pubdate datetime="[utc]">25m</time>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="card-footer">
+          <div class="card-replies  is-open" id="replies-to-0008" aria-hidden="false">
+
+            <form class="reply-form">
+              <label>
+                <input class="input-field" type="text" placeholder="Reply...">
+              </label>
+            </form>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  </aside>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="../assets/scripts/plugins.js"></script>
+  <script src="../assets/scripts/main.js"></script>
+
+</body>
+</html>
