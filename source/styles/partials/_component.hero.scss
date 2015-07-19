@@ -53,8 +53,7 @@
     opacity: 0.5;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       opacity: 1;
     }
   }
@@ -127,8 +126,7 @@
       text-transform: uppercase;
 
       &:hover,
-      &:focus,
-      &:active {
+      &:focus {
         color: $white;
       }
 

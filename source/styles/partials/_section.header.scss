@@ -50,8 +50,7 @@
     }
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       color: $white;
     }
   }
@@ -134,8 +133,7 @@
         }
 
         &:hover,
-        &:focus,
-        &:active {
+        &:focus {
 
           &::after {
             border-bottom-color: $green;
@@ -160,8 +158,7 @@
     background-color: $ui-light;
 
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       color: $white;
       background-color: $green;
 

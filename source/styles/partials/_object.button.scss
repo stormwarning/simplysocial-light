@@ -24,15 +24,13 @@
 
   &,
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     text-decoration: none;
     outline: none;
   }
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: $white;
     background-color: $color-link;
     border-color: $color-link;
@@ -49,8 +47,7 @@
   border: 0;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     background-color: $green;
   }
 }
@@ -63,8 +60,7 @@
   border: 0;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: $green-dark;
     background-color: transparent;
   }
