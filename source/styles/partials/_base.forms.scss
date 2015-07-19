@@ -90,14 +90,6 @@ label {
     position: absolute;
     z-index: -1;
     opacity: 0;
-
-    &:focus ~ .control-label {
-
-      &::before,
-      &::after {
-        opacity: 0.6;
-      }
-    }
   }
 }
 
@@ -152,6 +144,13 @@ label {
         transform: translateX(25px);
       }
     }
+
+    &:focus ~ .control-label {
+
+      &::before {
+        background-color: $green;
+      }
+    }
   }
 
   .control-label {
@@ -175,6 +174,13 @@ label {
       &::after {
         background-color: $green-dark;
         transform: scale(1);
+      }
+    }
+
+    &:focus ~ .control-label {
+
+      &::after {
+        background-color: $green;
       }
     }
   }
