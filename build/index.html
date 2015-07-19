@@ -20,6 +20,7 @@
   <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <div class="modal-overlay"></div>
 
   <header class="site-header" id="top">
     <div class="layout-container">
@@ -79,6 +80,13 @@
 
   <main class="main" id="main" role="main">
 
+    <!--[if lte IE 9]>
+    <style>
+      .hero-content {
+        padding-top: 100px;
+      }
+    </style>
+    <![endif]-->
     <section class="hero">
       <div class="hero-image" style="background-image:url(assets/images/hero-image.jpg);"></div>
       <div class="hero-overlay"></div>
@@ -103,6 +111,7 @@
           </form>
 
           <nav class="post-filters" role="navigation">
+          <div class="layout-container">
             <ul class="nav">
               <li>
                 <a class="is-active" href="/">All Posts</a>
@@ -131,6 +140,7 @@
                 </a>
               </li>
             </ul>
+          </div>
           </nav>
 
         </div>
@@ -336,6 +346,7 @@
          id="modal-0002"
          role="dialog"
          aria-hidden="true">
+  <div class="modal-container">
     <div class="modal-content" role="document">
 
       <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0002" type="button">
@@ -396,6 +407,7 @@
       </article>
 
     </div>
+  </div>
   </aside>
 
   <aside class="modal"
@@ -403,7 +415,7 @@
          role="dialog"
          aria-hidden="true"
          aria-labelledby="modal-title">
-
+  <div class="modal-container">
     <div class="modal-content" role="document">
 
       <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0001" type="button">
@@ -434,11 +446,12 @@
       </form>
 
     </div>
-
+  </div>
   </aside>
 
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="assets/scripts/plugins.js"></script>
   <script src="assets/scripts/main.js"></script>
 
 </body>

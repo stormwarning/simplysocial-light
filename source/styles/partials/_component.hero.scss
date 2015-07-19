@@ -35,12 +35,13 @@
 
 .hero-content {
   display: flex;
+  align-items: center;
 
   > div {
     margin: 15% auto auto;
 
     @include media-query(medium) {
-      min-width: 575px;
+      width: 575px;
       margin: auto;
     }
   }
@@ -65,13 +66,19 @@
 .post-filters {
   position: absolute;
   bottom: 4px;
+  left: 0;
   width: 100%;
   height: 56px;
-  max-width: 575px;
-  text-align: center;
 
-  @include media-query(medium) {
-    text-align: left;
+  .layout-container {
+    max-width: 575px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include media-query(medium) {
+      padding: 0;
+      text-align: left;
+    }
   }
 
   .nav {

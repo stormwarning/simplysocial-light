@@ -1,16 +1,28 @@
 /**
  * Modal popup.
  */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $black;
+  opacity: 0;
+}
+
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-  display: flex;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  background-color: rgba($black, 0.8);
+  overflow-x: hidden;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
   &[aria-hidden="true"] {
@@ -26,17 +38,37 @@
 }
 
 
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+
+  &::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+  }
+}
+
+
 .modal-content {
   position: relative;
   display: inline-block;
   max-width: 90%;
   padding: 0 ($layout-gutter / 2);
-  margin: auto;
+  margin: 0 auto;
+  text-align: left;
+  vertical-align: middle;
   background-color: $ui-dark;
   border-radius: $base-radius;
 
   @include media-query(medium) {
-    min-width: 575px;
+    max-width: 575px;
   }
 
   > :last-child { margin-bottom: 0; }
@@ -86,6 +118,11 @@
 
 .modal-open {
 
+  .modal-overlay {
+    z-index: 900;
+    opacity: 0.8;
+  }
+
   .site-header,
   .main,
   .site-footer {
@@ -102,7 +139,5 @@
     max-width: 975px;
     padding: 0;
     margin: 50px auto;
-
-    > :last-child { margin-bottom: 50px; }
   }
 }

@@ -58,11 +58,11 @@ html {
  */
 body {
   display: flex;
-  min-height: 100vh; /* [1] */
+  min-height: 100%; /* [1] */
   flex-direction: column;
 
   .main {
-    flex: 1;
+    flex: 1 0 auto;
   }
 }
 

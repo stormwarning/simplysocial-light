@@ -16,10 +16,12 @@ $(function() {
 
     if ( 'true' === $target.attr( 'aria-hidden' ) ) {
 
+      $( 'html' ).css( 'overflow', 'hidden' );
       $target.attr( 'aria-hidden', 'false' );
 
     } else {
 
+      $( 'html' ).css( 'overflow', '' );
       $target.attr( 'aria-hidden', 'true' );
 
     }
