@@ -3,7 +3,7 @@
  */
 .message-entry {
   position: relative;
-  padding: ($layout-gutter / 2) 0;
+  padding: ($layout-gutter / 2);
   background-color: rgba($green-dark, 0.7);
   border-radius: $base-radius;
 
@@ -48,6 +48,20 @@
   .button {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
+  }
+
+  .button--link {
+    margin-right: ($layout-gutter / 2);
+    color: $brand-dark;
+
+    @include media-query(medium) {
+      margin-right: $layout-gutter;
+    }
+
+    &:hover,
+    &:focus {
+      color: $green-dark;
+    }
   }
 
   .button--primary {

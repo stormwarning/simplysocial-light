@@ -1,44 +1,33 @@
 /**
  * Modal popup.
  */
-.modal-overlay {
+.modal-overlay,
+.mfp-bg {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1002;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background-color: $black;
-  opacity: 0;
+  opacity: 0.8;
 }
 
 
-.modal {
+.mfp-wrap {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 1003;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-
-  &[aria-hidden="true"] {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  &[aria-hidden="false"] {
-    z-index: 900;
-    opacity: 1;
-    visibility: visible;
-  }
+  outline: none;
+  -webkit-backface-visibility: hidden;
 }
 
 
-.modal-container {
+.mfp-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -56,12 +45,31 @@
 }
 
 
-.modal-content {
+.mfp-content {
   position: relative;
+  z-index: 1005;
   display: inline-block;
   max-width: 90%;
-  padding: 0 ($layout-gutter / 2);
+  padding: 0;
   margin: 0 auto;
+  vertical-align: middle;
+}
+
+
+.modal {
+  padding: $layout-gutter 0;
+
+  @include media-query(medium) {
+    padding: ($layout-gutter * 2) $layout-gutter;
+  }
+
+  > .button {
+    margin-right: 0;
+  }
+}
+
+
+.modal-content {
   text-align: left;
   vertical-align: middle;
   background-color: $ui-dark;
@@ -80,36 +88,39 @@
   .reply-form {
     padding: ($base-line-height / 2) $base-line-height;
   }
-
-  .button--link {
-    margin-right: ($layout-gutter / 2);
-    color: $brand-dark;
-
-    @include media-query(medium) {
-      margin-right: $layout-gutter;
-    }
-
-    &:hover,
-    &:focus {
-      color: $green-dark;
-    }
-  }
-
-  > .button {
-    position: absolute;
-    top: -27px;
-    right: 0;
-    margin-right: 0;
-
-    @include media-query(medium) {
-      right: -27px;
-    }
-  }
 }
 
 
 .modal-title {
   margin-bottom: ($base-line-height / 2);
+}
+
+
+
+
+.mfp-hide {
+  @extend %visually-hidden;
+}
+
+
+
+
+.mfp-close {
+  @extend .button;
+
+  position: absolute;
+  top: -6px;
+  right: 0;
+  margin-right: 0;
+
+  @include media-query(medium) {
+    top: 12px;
+    right: -8px;
+  }
+
+  > svg {
+    pointer-events: none;
+  }
 }
 
 
@@ -136,7 +147,5 @@
 
   .modal-content {
     max-width: 975px;
-    padding: 0;
-    margin: 50px auto;
   }
 }

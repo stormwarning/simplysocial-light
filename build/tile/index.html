@@ -13,19 +13,16 @@
   <meta name="application-name" content="SimplySocial">
 
   <link rel="stylesheet" href="../assets/styles/main.css">
-
-  <script src="../assets/scripts/modernizr.js"></script>
 </head>
 <body>
   <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div class="modal-overlay"></div>
 
   <header class="site-header" id="top">
     <div class="layout-container">
 
-      <a class="logo" href="..//">
+      <a class="logo" href="../">
         <svg class="icon  icon--logo">
           <use xlink:href="../assets/images/sprite.symbol.svg#icon-logo"></use>
         </svg>
@@ -33,7 +30,7 @@
       </a>
 
       <div class="header-controls">
-        <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0001" type="button">
+        <button class="button  button--link  js-toggle-modal" data-mfp-src="#modal-0001" type="button">
           <svg class="icon  icon--compose">
             <use xlink:href="../assets/images/sprite.symbol.svg#icon-compose"></use>
           </svg>
@@ -280,7 +277,7 @@
         </div>
 
         <figure class="card-media">
-          <a class="js-toggle-modal" data-toggle="#modal-0002" href="../assets/images/photo-01-detail.jpg">
+          <a class="js-toggle-modal" data-mfp-src="#modal-0002" href="../assets/images/photo-01-detail.jpg">
             <img src="../assets/images/photo-01.jpg" alt="">
           </a>
         </figure>
@@ -391,7 +388,7 @@
         </div>
 
         <figure class="card-media">
-          <a class="js-toggle-modal" data-toggle="#modal-0003" href="../assets/images/photo-01-detail.jpg">
+          <a class="js-toggle-modal" data-mfp-src="#modal-0003" href="../assets/images/photo-01-detail.jpg">
             <img src="../assets/images/video-02.jpg" alt="">
           </a>
         </figure>
@@ -467,7 +464,7 @@
         </div>
 
         <figure class="card-media">
-          <a class="js-toggle-modal" data-toggle="#modal-0004" href="../assets/images/photo-03-detail.jpg">
+          <a class="js-toggle-modal" data-mfp-src="#modal-0004" href="../assets/images/photo-03-detail.jpg">
             <img src="../assets/images/photo-03.jpg" alt="">
           </a>
         </figure>
@@ -579,7 +576,7 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
         </div>
 
         <figure class="card-media">
-          <a class="js-toggle-modal" data-toggle="#modal-0005" href="../assets/images/photo-01-detail.jpg">
+          <a class="js-toggle-modal" data-mfp-src="#modal-0005" href="../assets/images/photo-01-detail.jpg">
             <img src="../assets/images/video-01.jpg" alt="">
           </a>
         </figure>
@@ -725,7 +722,7 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
         </div>
 
         <figure class="card-media">
-          <a class="js-toggle-modal" data-toggle="#modal-0006" href="../assets/images/photo-02-detail.jpg">
+          <a class="js-toggle-modal" data-mfp-src="#modal-0006" href="../assets/images/photo-02-detail.jpg">
             <img src="../assets/images/photo-02.jpg" alt="">
           </a>
         </figure>
@@ -836,7 +833,7 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
         </div>
 
         <figure class="card-media">
-          <a class="js-toggle-modal" data-toggle="#modal-0007" href="../assets/images/photo-04-detail.jpg">
+          <a class="js-toggle-modal" data-mfp-src="#modal-0007" href="../assets/images/photo-04-detail.jpg">
             <img src="../assets/images/photo-04.jpg" alt="">
           </a>
         </figure>
@@ -895,20 +892,12 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
   </footer>
 
 
-  <aside class="modal"
+  <aside class="modal  mfp-hide"
          id="modal-0001"
-         data-toggle="#modal-0001"
          role="dialog"
          aria-hidden="true"
          aria-labelledby="modal-title">
-  <div class="modal-container">
     <div class="modal-content" role="document">
-
-      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0001" type="button">
-        <svg class="icon  icon--close">
-          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
-        </svg>
-      </button>
 
       <form class="message-entry  message-entry--modal">
         <h6 class="modal-title" id="modal-title">Create new message</h6>
@@ -928,26 +917,17 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
           </svg> Add Video
         </button>
 
-        <button class="button  button--primary  js-toggle-modal" data-toggle="#modal-0001" type="submit">Post</button>
+        <button class="button  button--primary" type="submit">Post</button>
       </form>
 
     </div>
-  </div>
   </aside>
 
-  <aside class="modal  modal--with-media"
+  <aside class="modal  modal--with-media  mfp-hide"
          id="modal-0002"
-         data-toggle="#modal-0002"
          role="dialog"
          aria-hidden="true">
-  <div class="modal-container">
     <div class="modal-content" role="document">
-
-      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0002" type="button">
-        <svg class="icon  icon--close">
-          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
-        </svg>
-      </button>
 
       <article class="card  card--with-image">
         <figure class="card-media">
@@ -1001,22 +981,13 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
       </article>
 
     </div>
-  </div>
   </aside>
 
-  <aside class="modal  modal--with-media"
+  <aside class="modal  modal--with-media  mfp-hide"
          id="modal-0003"
-         data-toggle="#modal-0003"
          role="dialog"
          aria-hidden="true">
-  <div class="modal-container">
     <div class="modal-content" role="document">
-
-      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0003" type="button">
-        <svg class="icon  icon--close">
-          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
-        </svg>
-      </button>
 
       <article class="card  card--with-image">
         <figure class="card-media">
@@ -1070,22 +1041,13 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
       </article>
 
     </div>
-  </div>
   </aside>
 
-  <aside class="modal  modal--with-media"
+  <aside class="modal  modal--with-media  mfp-hide"
          id="modal-0004"
-         data-toggle="#modal-0004"
          role="dialog"
          aria-hidden="true">
-  <div class="modal-container">
     <div class="modal-content" role="document">
-
-      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0004" type="button">
-        <svg class="icon  icon--close">
-          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
-        </svg>
-      </button>
 
       <article class="card  card--with-image">
         <figure class="card-media">
@@ -1139,22 +1101,13 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
       </article>
 
     </div>
-  </div>
   </aside>
 
-  <aside class="modal  modal--with-media"
+  <aside class="modal  modal--with-media  mfp-hide"
          id="modal-0005"
-         data-toggle="#modal-0005"
          role="dialog"
          aria-hidden="true">
-  <div class="modal-container">
     <div class="modal-content" role="document">
-
-      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0005" type="button">
-        <svg class="icon  icon--close">
-          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
-        </svg>
-      </button>
 
       <article class="card  card--with-image">
         <figure class="card-media">
@@ -1208,22 +1161,13 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
       </article>
 
     </div>
-  </div>
   </aside>
 
-  <aside class="modal  modal--with-media"
+  <aside class="modal  modal--with-media  mfp-hide"
          id="modal-0006"
-         data-toggle="#modal-0006"
          role="dialog"
          aria-hidden="true">
-  <div class="modal-container">
     <div class="modal-content" role="document">
-
-      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0006" type="button">
-        <svg class="icon  icon--close">
-          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
-        </svg>
-      </button>
 
       <article class="card  card--with-image">
         <figure class="card-media">
@@ -1277,22 +1221,13 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
       </article>
 
     </div>
-  </div>
   </aside>
 
-  <aside class="modal  modal--with-media"
+  <aside class="modal  modal--with-media  mfp-hide"
          id="modal-0007"
-         data-toggle="#modal-0007"
          role="dialog"
          aria-hidden="true">
-  <div class="modal-container">
     <div class="modal-content" role="document">
-
-      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0007" type="button">
-        <svg class="icon  icon--close">
-          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
-        </svg>
-      </button>
 
       <article class="card  card--with-image">
         <figure class="card-media">
@@ -1346,22 +1281,13 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
       </article>
 
     </div>
-  </div>
   </aside>
 
-  <aside class="modal  modal--with-media"
+  <aside class="modal  modal--with-media  mfp-hide"
          id="modal-0008"
-         data-toggle="#modal-0008"
          role="dialog"
          aria-hidden="true">
-  <div class="modal-container">
     <div class="modal-content" role="document">
-
-      <button class="button  button--link  js-toggle-modal" data-toggle="#modal-0008" type="button">
-        <svg class="icon  icon--close">
-          <use xlink:href="../assets/images/sprite.symbol.svg#icon-close"></use>
-        </svg>
-      </button>
 
       <article class="card  card--with-image">
         <figure class="card-media">
@@ -1415,7 +1341,6 @@ inDesignCC <a href="http://bit.ly/1lE5QD" rel="nofollow" target="_blank">bit.ly/
       </article>
 
     </div>
-  </div>
   </aside>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
