@@ -2,22 +2,52 @@
  *
  */
 /* jshint jquery:true */
-$(function() {
-  FastClick.attach( document.body );
-});
+$(document).ready(function() {
 
-$( 'input, textarea' ).placeholder({
-  customClass: 'has-placeholder'
-});
+  $(function() {
 
-$(function() {
-  var $msnry = $( '.js-masonry' );
+    'use strict';
 
-  $msnry.imagesLoaded( function() {
+    FastClick.attach( document.body );
 
-    $msnry.masonry({
-      itemSelector: '.card'
+  });
+
+
+  $( 'input, textarea' ).placeholder({
+    customClass: 'has-placeholder'
+  });
+
+
+  $(function() {
+
+    $( '.js-toggle-modal' ).magnificPopup({
+      type: 'inline',
+      closeMarkup: '<button class="button  button--link  mfp-close" type="button">
+              <svg class="icon  icon--close">
+                <use xlink:href="/simplysocial-light/assets/images/sprite.symbol.svg#icon-close"></use>
+              </svg>
+            </button>',
+      midClick: true,
+      preloader: false
     });
 
   });
+
+
+  $(function() {
+
+    'use strict';
+
+    var $msnry = $( '.js-masonry' );
+
+    $msnry.imagesLoaded( function() {
+
+      $msnry.masonry({
+        itemSelector: '.card'
+      });
+
+    });
+
+  });
+
 });

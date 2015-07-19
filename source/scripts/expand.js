@@ -2,50 +2,54 @@
  *
  */
 /* jshint jquery:true */
-$(function() {
+$(document).ready(function() {
 
-  'use strict';
+  $(function() {
 
-  $( '.js-toggle-expand' ).click(function( e ) {
+    'use strict';
 
-    var $target;
-    var $changeContent;
+    $( '.js-toggle-expand' ).click(function( e ) {
 
-    if ( $( this ).attr( 'href' ) ) {
+      var $target;
+      var $changeContent;
 
-      $target = $( $( this ).attr( 'href' ) );
-      $changeContent = true;
+      if ( $( this ).attr( 'href' ) ) {
 
-    } else {
+        $target = $( $( this ).attr( 'href' ) );
+        $changeContent = true;
 
-      $target = $( $( this ).data( 'toggle' ) );
-      $changeContent = false;
+      } else {
 
-    }
+        $target = $( $( this ).data( 'toggle' ) );
+        $changeContent = false;
 
-    e.preventDefault();
-    $( this ).toggleClass( 'is-open' );
-    $target.toggleClass( 'is-open' );
-
-    if ( 'true' === $target.attr( 'aria-hidden' ) ) {
-
-      if ( $changeContent ) {
-        $( this ).html( 'Collapse' );
       }
 
-      $( this ).attr( 'aria-expanded', 'true' );
-      $target.attr( 'aria-hidden', 'false' );
+      e.preventDefault();
+      $( this ).toggleClass( 'is-open' );
+      $target.toggleClass( 'is-open' );
 
-    } else {
+      if ( 'true' === $target.attr( 'aria-hidden' ) ) {
 
-      if ( $changeContent ) {
-        $( this ).html( 'Expand' );
+        if ( $changeContent ) {
+          $( this ).html( 'Collapse' );
+        }
+
+        $( this ).attr( 'aria-expanded', 'true' );
+        $target.attr( 'aria-hidden', 'false' );
+
+      } else {
+
+        if ( $changeContent ) {
+          $( this ).html( 'Expand' );
+        }
+
+        $( this ).attr( 'aria-expanded', 'false' );
+        $target.attr( 'aria-hidden', 'true' );
+
       }
 
-      $( this ).attr( 'aria-expanded', 'false' );
-      $target.attr( 'aria-hidden', 'true' );
-
-    }
+    });
 
   });
 

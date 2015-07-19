@@ -2,25 +2,29 @@
  *
  */
 /* jshint jquery:true */
-$(function() {
+$(document).ready(function() {
 
-  'use strict';
+  $(function() {
 
-  $( '.js-toggle-dropdown' ).click(function( e ) {
+    'use strict';
 
-    e.preventDefault();
-    $( '.dropdown' ).toggleClass( 'is-open' );
-    $( 'body' ).toggleClass( 'dropdown-open' );
+    $( '.js-toggle-dropdown' ).click(function( e ) {
 
-    if ( 'true' === $( '.dropdown' ).attr( 'aria-hidden' ) ) {
+      e.preventDefault();
+      $( '.dropdown' ).toggleClass( 'is-open' );
+      $( 'body' ).toggleClass( 'dropdown-open' );
 
-      $( '.dropdown' ).attr( 'aria-hidden', 'false' );
+      if ( 'true' === $( '.dropdown' ).attr( 'aria-hidden' ) ) {
 
-    } else {
+        $( '.dropdown' ).attr( 'aria-hidden', 'false' );
 
-      $( '.dropdown' ).attr( 'aria-hidden', 'true' );
+      } else {
 
-    }
+        $( '.dropdown' ).attr( 'aria-hidden', 'true' );
+
+      }
+
+    });
 
   });
 
