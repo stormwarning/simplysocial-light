@@ -29,6 +29,7 @@ var plugins = [
 
   source.plugins + '/fastclick/lib/fastclick.js',
   source.plugins + '/svg4everybody/svg4everybody.js',
+  source.plugins + '/imagesloaded/imagesloaded.pkgd.js',
   source.plugins + '/jquery-placeholder/jquery.placeholder.js',
   source.plugins + '/masonry/dist/masonry.pkgd.js'
 
