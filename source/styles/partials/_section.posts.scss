@@ -33,7 +33,12 @@
 .posts--grid-view {
 
   .card {
-    width: 355px; // 375px - 10px on both sides.
+    width: 280px; // 375px - 10px on both sides.
     margin: 0 ($layout-gutter / 2) $layout-gutter;
+
+    @include media-query(medium) {
+      width: 355px; // 375px - 10px on both sides.
+      margin: 0 ($layout-gutter / 2) $layout-gutter;
+    }
   }
 }
