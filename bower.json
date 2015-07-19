@@ -24,6 +24,7 @@
     "normalize-scss": "~3.0.3",
     "svg4everybody": "~1.0.0",
     "fastclick": "~1.0.6",
-    "jquery-placeholder": "~2.1.2"
+    "jquery-placeholder": "~2.1.2",
+    "masonry": "~3.3.1"
   }
 }

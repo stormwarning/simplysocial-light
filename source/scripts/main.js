@@ -5,3 +5,7 @@ $(function() {
 $( 'input, textarea' ).placeholder({
   customClass: 'has-placeholder'
 });
+
+$( '.js-masonry' ).masonry({
+  itemSelector: '.card'
+});
