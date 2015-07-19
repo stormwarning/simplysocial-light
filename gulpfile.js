@@ -28,7 +28,8 @@ var assets = {
 var plugins = [
 
   source.plugins + '/fastclick/lib/fastclick.js',
-  source.plugins + '/svg4everybody/svg4everybody.js'
+  source.plugins + '/svg4everybody/svg4everybody.js',
+  source.plugins + '/jquery-placeholder/jquery.placeholder.js'
 
 ];
 

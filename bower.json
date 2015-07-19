@@ -23,6 +23,7 @@
     "modernizr": "~2.8.3",
     "normalize-scss": "~3.0.3",
     "svg4everybody": "~1.0.0",
-    "fastclick": "~1.0.6"
+    "fastclick": "~1.0.6",
+    "jquery-placeholder": "~2.1.2"
   }
 }
