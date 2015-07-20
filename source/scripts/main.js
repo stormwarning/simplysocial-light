@@ -28,7 +28,15 @@ $(document).ready(function() {
               </svg>
             </button>',
       midClick: true,
-      preloader: false
+      preloader: false,
+      callbacks: {
+        open: function() {
+          $( 'body' ).addClass( 'modal-open' );
+        },
+        close: function() {
+          $( 'body' ).removeClass( 'modal-open' );
+        }
+      }
     });
 
   });
